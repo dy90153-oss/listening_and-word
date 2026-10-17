@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <!-- 上線後可替換為您的正式網址 -->
-    <loc>https://your-domain.vercel.app/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <loc>https://dy90153-oss.github.io/listening_and-word/</loc>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>

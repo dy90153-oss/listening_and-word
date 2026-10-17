@@ -1,6 +1,6 @@
-# 允許所有搜尋引擎爬蟲抓取
+# 允許所有搜尋引擎爬蟲抓取全站內容
 User-agent: *
 Allow: /
 
-# 網站地圖位置 (未來綁定網域後可替換為實際網址)
-Sitemap: https://your-domain.vercel.app/sitemap.xml
+# 網站地圖位置 (GitHub Pages 正式網址)
+Sitemap: https://dy90153-oss.github.io/listening_and-word/sitemap.xml
