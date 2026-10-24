@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.vercel/
+.openai/
+.taste-skill/
+.DS_Store
+.env*
+!.env.example
+assets/lucide.min.js

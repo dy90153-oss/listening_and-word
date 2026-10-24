@@ -3,27 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>文字音律工作室｜專業錄音室級・繁體中文音檔轉譯與字幕製作</title>
+  <title>音律工作室｜專業錄音室級・繁體中文音檔轉譯與字幕製作</title>
   <meta name="description" content="專業錄音室規格繁體中文逐字稿轉譯，每分鐘15元透明定價，人工精準校對，適用商務會議、公開演講、法律醫療專科紀錄、YouTube與Podcast字幕製作。支援急件與長期配合優惠。" />
   <meta name="keywords" content="逐字稿, 音檔轉文字, 聽打服務, 商務會議記錄, 法律錄音逐字稿, 醫療聽打, 字幕製作, SRT字幕, 繁體中文聽打, 逐字稿費用, 逐字稿每分鐘15元, 錄音室聽打" />
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-  <meta name="author" content="文字音律逐字稿工作室" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="author" content="音律工作室" />
 
-  <link rel="canonical" href="https://dy90153-oss.github.io/listening_and-word/" />
 
   <!-- Open Graph / Facebook / LINE -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://dy90153-oss.github.io/listening_and-word/" />
-  <meta property="og:site_name" content="文字音律逐字稿工作室" />
-  <meta property="og:title" content="文字音律工作室｜專業錄音室級・繁體中文音檔轉譯與字幕製作" />
+  <meta property="og:site_name" content="音律工作室" />
+  <meta property="og:title" content="音律工作室｜專業錄音室級・繁體中文音檔轉譯與字幕製作" />
   <meta property="og:description" content="專業錄音室規格繁體中文逐字稿轉譯，每分鐘15元透明定價，人工精準校對，適用商務會議、公開演講、法律醫療專科紀錄、YouTube與Podcast字幕製作。支援急件與長期配合優惠。" />
   <meta property="og:image" content="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1200&h=630&q=80" />
   <meta property="og:locale" content="zh_TW" />
 
   <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content="https://dy90153-oss.github.io/listening_and-word/" />
-  <meta name="twitter:title" content="文字音律工作室｜專業錄音室級・繁體中文音檔轉譯與字幕製作" />
+  <meta name="twitter:title" content="音律工作室｜專業錄音室級・繁體中文音檔轉譯與字幕製作" />
   <meta name="twitter:description" content="專業錄音室規格繁體中文逐字稿轉譯，每分鐘15元透明定價，人工精準校對，支援急件與法律醫療專業紀錄。" />
   <meta name="twitter:image" content="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1200&h=630&q=80" />
 
@@ -32,8 +29,7 @@
   {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    "name": "文字音律逐字稿工作室",
-    "url": "https://dy90153-oss.github.io/listening_and-word/",
+    "name": "音律工作室",
     "description": "專業錄音室級繁體中文音檔轉譯與字幕製作服務，每分鐘 15 元透明定價。",
     "priceRange": "NT$ 15 / 分鐘",
     "currenciesAccepted": "TWD",
@@ -53,44 +49,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;600;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['"Noto Sans TC"', 'sans-serif'],
-            serif: ['"Noto Serif TC"', 'serif'],
-            mono: ['"Space Mono"', 'monospace'],
-          },
-          colors: {
-            studio: {
-              950: '#07090d',
-              900: '#0c0f16',
-              850: '#11151f',
-              800: '#171c29',
-              700: '#22293a',
-            },
-            sage: {
-              100: '#eef2ee',
-              200: '#d7ded7',
-              300: '#b8c4b9',
-              400: '#8e9e90',
-              500: '#6d7e70',
-            },
-            amber: {
-              indicator: '#f59e0b',
-              glow: 'rgba(245, 158, 11, 0.15)',
-            }
-          }
-        }
-      }
-    }
-  </script>
-  <!-- Lucide Icons CDN -->
-  <script src="https://unpkg.com/lucide@latest"></script>
-  
+  <!-- 固定版本的本機樣式與圖示，不依賴執行期 CDN -->
+  <link rel="stylesheet" href="./assets/tailwind.min.css" />
+  <script defer src="./assets/lucide.min.js"></script>
+  <script defer src="./site.config.js"></script>
+  <script defer src="./assets/quote.js"></script>
+  <script defer src="./assets/app.js"></script>
+  <script defer src="./assets/design-model.js"></script>
+  <script defer src="./assets/theme-engine.js"></script>
+  <script defer src="./assets/designer.js"></script>
   <style>
     /* @webloved 單一光源核心：左上角光源衰減、越往下越深沉、無死白、防止橫向位移 */
     html, body {
@@ -128,30 +95,17 @@
 
     /* 仿實體受光：左與上高光，右與下深陷暗處，陰影朝右下方投射 */
     .studio-card {
-      background: linear-gradient(145deg, rgba(20, 25, 36, 0.9) 0%, rgba(8, 11, 17, 0.98) 100%);
-      border: 1px solid rgba(255, 255, 255, 0.04);
-      border-top: 1px solid rgba(215, 222, 215, 0.25);
-      border-left: 1px solid rgba(215, 222, 215, 0.14);
-      border-right: 1px solid rgba(0, 0, 0, 0.65);
-      border-bottom: 1px solid rgba(0, 0, 0, 0.85);
-      box-shadow: 24px 36px 70px -15px rgba(0, 0, 0, 0.95);
-      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.4s ease;
-      will-change: transform;
+      background: #11151f;
+      border: 0;
+      box-shadow: none;
+      transition: background-color 0.2s ease;
     }
-    .studio-card:hover {
-      border-top-color: rgba(245, 158, 11, 0.35);
-      border-left-color: rgba(245, 158, 11, 0.2);
-      box-shadow: 30px 48px 85px -15px rgba(0, 0, 0, 0.98);
-    }
+    .studio-card:hover { background-color: #171c29; }
 
     .studio-metal-plate {
-      background: linear-gradient(180deg, rgba(32, 39, 54, 0.65) 0%, rgba(14, 18, 26, 0.92) 100%);
-      border: 1px solid rgba(255, 255, 255, 0.06);
-      border-top: 1px solid rgba(215, 222, 215, 0.28);
-      border-left: 1px solid rgba(215, 222, 215, 0.15);
-      border-right: 1px solid rgba(0, 0, 0, 0.7);
-      border-bottom: 1px solid rgba(0, 0, 0, 0.8);
-      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 8px 24px rgba(0, 0, 0, 0.7);
+      background: #171c29;
+      border: 0;
+      box-shadow: none;
     }
 
     /* 混音推桿自訂美化 */
@@ -276,12 +230,16 @@
       0%, 100% { opacity: 0.4; }
       50% { opacity: 1; }
     }
-    .animate-rec-pulse {
+    . {
       animation: recPulse 2s ease-in-out infinite;
     }
   </style>
+  <link rel="stylesheet" href="./assets/refinements.css" />
+  <link rel="stylesheet" href="./assets/theme.css" />
+  <link rel="stylesheet" href="./assets/designer.css" />
 </head>
-<body class="font-sans antialiased selection:bg-amber-500/20 selection:text-amber-200 relative min-h-screen">
+<body class="font-sans antialiased selection:bg-amber-500/20 selection:text-amber-200 relative min-h-[100svh]">
+  <div id="sitePreview">
   
   <!-- 全站微細膠片顆粒質感 -->
   <div class="fixed inset-0 studio-grain pointer-events-none z-50"></div>
@@ -295,36 +253,33 @@
       
       <!-- Studio Logo -->
       <div class="flex items-center gap-3">
-        <div class="w-8 h-8 rounded-lg studio-metal-plate flex items-center justify-center text-amber-400 font-mono text-xs font-bold shadow-inner">
+        <div class="w-8 h-8 rounded-lg studio-metal-plate flex items-center justify-center text-amber-400 font-mono text-[13px] font-bold">
           <i data-lucide="disc" class="w-4 h-4"></i>
         </div>
         <div class="flex flex-col">
-          <span class="font-serif font-bold text-base text-sage-200 tracking-wider flex items-center gap-2">
-            文字音律
-            <span class="font-mono text-[10px] text-amber-400 bg-amber-500/10 border border-amber-500/20 px-2 py-0.5 rounded tracking-normal font-normal flex items-center gap-1.5">
+          <span class="font-serif font-bold text-base text-sage-200 tracking-wider flex items-center gap-2 brand-name">
+            音律工作室
+            <span class="font-mono text-[13px] text-amber-400 brand-rec bg-amber-500/10 border border-amber-500/20 px-2 py-0.5 rounded tracking-normal font-normal flex items-center gap-1.5">
               <span class="w-1.5 h-1.5 rounded-full bg-amber-400 inline-block"></span>
-              REC // 44.1kHz
+              AUDIO STUDIO
             </span>
           </span>
-          <span class="font-mono text-[9px] text-slate-500 tracking-tight uppercase">Mastering Grade Subtitle Lab</span>
+          <span class="font-mono text-[13px] text-slate-500 tracking-tight uppercase brand-tagline">Mastering Grade Subtitle Lab</span>
         </div>
       </div>
 
       <!-- 導航選單 -->
-      <nav class="hidden md:flex items-center gap-8 font-mono text-xs text-slate-400 tracking-wider">
+      <nav class="hidden md:flex items-center gap-8 font-mono text-[13px] text-slate-400 tracking-wider">
         <a href="#services" class="hover:text-sage-200 transition">/ 01 服務模組</a>
         <a href="#pricing" class="hover:text-sage-200 transition">/ 02 計費規格</a>
-        <a href="#calculator" class="hover:text-amber-400 transition text-amber-400/90 font-bold">/ 03 即時試算台</a>
+        <a href="#calculator" class="hover:text-amber-400 transition text-amber-400 font-bold">/ 03 即時試算台</a>
         <a href="#workflow" class="hover:text-sage-200 transition">/ 04 訊號流程</a>
         <a href="#faq" class="hover:text-sage-200 transition">/ 05 常見問答</a>
       </nav>
 
       <!-- 快捷諮詢按鈕 -->
       <div class="flex items-center gap-3">
-        <a href="#calculator" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg font-mono text-xs font-bold text-studio-950 bg-gradient-to-r from-sage-200 to-sage-300 hover:from-white hover:to-sage-200 shadow-lg shadow-black/50 transition transform hover:-translate-y-0.5">
-          <i data-lucide="sliders" class="w-3.5 h-3.5"></i>
-          試算報價
-        </a>
+        <a href="#calculator" class="nav-letter-roll inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg font-mono text-[13px] font-bold text-studio-950 transition bg-sage-200 hover:bg-sage-100" aria-label="試算報價"><svg class="w-3.5 h-3.5" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 3v7m0 4v7m8-18v5m0 4v9m8-18v9m0 4v5M2 14h4m4-6h4m4 8h4"/></svg><span class="nav-label" aria-hidden="true"><span class="nav-letter" style="--letter:0">試</span><span class="nav-letter" style="--letter:1">算</span><span class="nav-letter" style="--letter:2">報</span><span class="nav-letter" style="--letter:3">價</span></span></a>
       </div>
     </div>
   </header>
@@ -341,46 +296,35 @@
         <!-- 左側主標 (依序淡入動畫) -->
         <div class="lg:col-span-7 space-y-7 text-left">
           <!-- 主標題 (低飽和鼠尾草灰，無刺眼死白，巨幅典雅排版) -->
-          <h1 class="anim-enter-2 text-3xl sm:text-5xl lg:text-[3.6rem] font-serif font-black text-sage-100 tracking-tight leading-[1.2] sm:leading-[1.15]">
-            每一分微弱聲音，<br />
-            都值得被<span class="italic font-normal text-sage-200 underline decoration-amber-500/40 decoration-1 underline-offset-8">精確記錄</span>為文字。
-          </h1>
+          <h1 class="title-beat text-3xl sm:text-5xl lg:text-[2.9rem] font-serif font-black text-sage-100 tracking-tight leading-[1.2] sm:leading-[1.15]" aria-label="每一分微弱聲音，都值得被精確記錄為文字。"><span style="--beat:0">每一分</span><span style="--beat:1">微弱聲音，</span><span style="--beat:2">都值得</span><span style="--beat:3">被精確</span><span style="--beat:4">記錄為文字。</span></h1>
 
           <!-- 說明文案 -->
-          <p class="anim-enter-3 text-sm sm:text-base text-slate-400 font-light leading-relaxed max-w-xl">
-            告別機械算法與生硬機翻的盲目猜測。以專業錄音室監聽耳機進行微觀聲音辨析，專為商務決策、演講論壇、法律醫療專業紀錄及影音創作者打造。
-            單軌透明費率每分鐘 <strong class="text-sage-200 font-bold font-mono">NT$ 15 元</strong>。
-          </p>
+          <p class="copy-type-stamp anim-enter-3 text-sm sm:text-base text-slate-400 font-light leading-relaxed max-w-xl" aria-label="告別機械算法與生硬機翻的盲目猜測。以專業錄音室監聽耳機進行微觀聲音辨析，專為商務決策、演講論壇、法律醫療專業紀錄及影音創作者打造。單軌透明費率每分鐘 NT$ 15 元。"><span aria-hidden="true" style="--char:0">告別機械算</span><span aria-hidden="true" style="--char:1">法與生硬機</span><span aria-hidden="true" style="--char:2">翻的盲目猜</span><span aria-hidden="true" style="--char:3">測。以專業</span><span aria-hidden="true" style="--char:4">錄音室監聽</span><span aria-hidden="true" style="--char:5">耳機進行微</span><span aria-hidden="true" style="--char:6">觀聲音辨析</span><span aria-hidden="true" style="--char:7">，專為商務</span><span aria-hidden="true" style="--char:8">決策、演講</span><span aria-hidden="true" style="--char:9">論壇、法律</span><span aria-hidden="true" style="--char:10">醫療專業紀</span><span aria-hidden="true" style="--char:11">錄及影音創</span><span aria-hidden="true" style="--char:12">作者打造。</span><span aria-hidden="true" style="--char:13">單軌透明費</span><span aria-hidden="true" style="--char:14">率每分鐘 </span><span aria-hidden="true" style="--char:15">NT$ 1</span><span aria-hidden="true" style="--char:16">5 元。</span></p>
 
           <!-- 實體按鈕群 (左上高光、右下陰影) -->
-          <div class="anim-enter-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2 font-mono text-xs">
-            <a href="#calculator" class="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl font-bold tracking-wider text-studio-950 bg-gradient-to-b from-sage-100 to-sage-300 hover:from-white hover:to-sage-200 shadow-2xl shadow-black/90 border-t border-l border-white/60 transition transform hover:-translate-y-0.5">
-              <i data-lucide="sliders" class="w-4 h-4"></i>
-              啟動費用試算台
-            </a>
-            <a href="https://line.me/ti/p/~YOUR_LINE_ID" target="_blank" class="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl font-bold text-sage-300 studio-metal-plate hover:text-white transition">
-              <i data-lucide="message-square" class="w-4 h-4 text-emerald-400"></i>
-              LINE 專線預約排程
-            </a>
+          <div class="anim-enter-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2 font-mono text-[13px]">
+            <a href="#calculator" class="cta-letter-wave inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl font-bold tracking-wider text-studio-950 transition bg-sage-200 hover:bg-sage-100" aria-label="啟動費用試算台"><svg class="cta-icon w-4 h-4" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 3v7m0 4v7m8-18v5m0 4v9m8-18v9m0 4v5M2 14h4m4-6h4m4 8h4"/></svg><span class="cta-label" aria-hidden="true"><span class="cta-letter" style="--letter:0">啟</span><span class="cta-letter" style="--letter:1">動</span><span class="cta-letter" style="--letter:2">費</span><span class="cta-letter" style="--letter:3">用</span><span class="cta-letter" style="--letter:4">試</span><span class="cta-letter" style="--letter:5">算</span><span class="cta-letter" style="--letter:6">台</span></span></a>
+            <a href="#contact" data-contact="line" target="_blank" class="line-ripple inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl font-bold text-sage-300 studio-metal-plate hover:text-white transition"><span class="call-symbol"><svg class="call-icon w-4 h-4" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.35 1.9.69 2.79a2 2 0 0 1-.45 2.11L8.09 9.89a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.83.57 2.79.69A2 2 0 0 1 22 16.92z"/></svg></span><span>LINE 專線預約排程</span></a>
           </div>
 
           <!-- 錄音室硬體參數小標籤 -->
-          <div class="anim-enter-4 grid grid-cols-2 sm:grid-cols-4 gap-3 pt-6 border-t border-white/[0.08] font-mono text-[11px] text-slate-400">
+          <div class="anim-enter-4 grid grid-cols-2 sm:grid-cols-4 gap-3 pt-6 border-t border-white/[0.08] font-mono text-[13px] text-slate-400">
             <div>
-              <div class="text-[9px] text-slate-500 uppercase tracking-wider">UNIT RATE</div>
+              <div class="text-[13px] text-slate-500 uppercase tracking-wider">UNIT RATE</div>
               <div class="text-sage-200 font-bold mt-0.5">NT$ 15 / 分</div>
             </div>
             <div>
-              <div class="text-[9px] text-slate-500 uppercase tracking-wider">TURNAROUND</div>
-              <div class="text-sage-200 font-bold mt-0.5">24H 快速交件</div>
+              <div class="text-[13px] text-slate-500 uppercase tracking-wider">TURNAROUND</div>
+              <div class="text-sage-200 font-bold mt-0.5">基本 3–5 工作天</div>
+              <div class="text-[13px] text-slate-400 mt-1">實際交期依各案確認</div>
             </div>
             <div>
-              <div class="text-[9px] text-slate-500 uppercase tracking-wider">PRIVACY</div>
+              <div class="text-[13px] text-slate-500 uppercase tracking-wider">PRIVACY</div>
               <div class="text-sage-200 font-bold mt-0.5">NDA 保密協定</div>
             </div>
             <div>
-              <div class="text-[9px] text-slate-500 uppercase tracking-wider">FORMATS</div>
-              <div class="text-sage-200 font-bold mt-0.5">SRT / Word / VTT</div>
+              <div class="text-[13px] text-slate-500 uppercase tracking-wider">FORMATS</div>
+              <div class="text-sage-200 font-bold mt-0.5">SRT</div>
             </div>
           </div>
 
@@ -394,12 +338,12 @@
             <div id="heroCard" class="relative rounded-2xl overflow-hidden studio-card p-2 sm:p-2.5 group">
               
               <!-- 頂部機架螺絲與即時監聽指示 -->
-              <div class="px-3 py-2 flex items-center justify-between font-mono text-[10px] text-slate-500 border-b border-white/[0.06] mb-2">
+              <div class="px-3 py-2 flex items-center justify-between font-mono text-[13px] text-slate-500 border-b border-white/[0.06] mb-2">
                 <div class="flex items-center gap-2">
-                  <span class="w-2 h-2 rounded-full bg-red-500 animate-rec-pulse"></span>
+                  <span class="w-2 h-2 rounded-full bg-red-500"></span>
                   <span class="text-slate-400">RACK-01 // AUDIO OSCILLOSCOPE</span>
                 </div>
-                <div class="text-amber-400 font-bold">CH 1-2 [LIVE AUDIO]</div>
+                <div class="text-amber-400 font-bold">CH 1-2 [PREVIEW]</div>
               </div>
 
               <!-- 主攝影視覺 -->
@@ -412,10 +356,10 @@
 
                 <!-- 真正 60FPS 動態跳動的音訊聲波示波器 (Live Oscilloscope Canvas) -->
                 <div class="absolute bottom-2 inset-x-2 p-3 studio-metal-plate rounded-xl backdrop-blur-md border border-white/10">
-                  <div class="flex items-center justify-between font-mono text-[9px] text-amber-400/90 mb-1.5">
+                  <div class="flex items-center justify-between font-mono text-[13px] text-amber-400 mb-1.5">
                     <span class="flex items-center gap-1.5">
-                      <i data-lucide="activity" class="w-3 h-3 text-amber-400 animate-pulse"></i>
-                      FREQUENCY ANALYZER (60FPS LIVE)
+                      <i data-lucide="activity" class="w-3 h-3 text-amber-400"></i>
+                      聲波示意
                     </span>
                     <span class="text-slate-400 font-mono">GAIN: +3.2dB</span>
                   </div>
@@ -425,12 +369,12 @@
               </div>
 
               <!-- 機架底部動態跳動雙軌 VU 聲量表 (Dual Stereo VU Meters) -->
-              <div class="px-3 py-3 mt-2 flex items-center justify-between font-mono text-[10px] text-slate-500">
+              <div class="px-3 py-3 mt-2 flex items-center justify-between font-mono text-[13px] text-slate-500">
                 <span>SIGNAL: STEREO</span>
                 
                 <!-- 動態跳動的電平表 -->
                 <div class="flex items-center gap-2">
-                  <span class="text-[9px] text-slate-500">L</span>
+                  <span class="text-[13px] text-slate-500">L</span>
                   <div id="vuLeft" class="flex items-center gap-0.5">
                     <span class="w-2 h-2 rounded-xs bg-emerald-500"></span>
                     <span class="w-2 h-2 rounded-xs bg-emerald-500"></span>
@@ -439,7 +383,7 @@
                     <span class="w-2 h-2 rounded-xs bg-amber-500"></span>
                     <span class="w-2 h-2 rounded-xs bg-red-500/20"></span>
                   </div>
-                  <span class="text-[9px] text-slate-500 ml-1">R</span>
+                  <span class="text-[13px] text-slate-500 ml-1">R</span>
                   <div id="vuRight" class="flex items-center gap-0.5">
                     <span class="w-2 h-2 rounded-xs bg-emerald-500"></span>
                     <span class="w-2 h-2 rounded-xs bg-emerald-500"></span>
@@ -465,14 +409,11 @@
   <!-- 錄音室銘牌哲學 Philosophy (嚴格無死白、如燭光照亮的古銅刻字) -->
   <section class="py-16 border-y border-white/[0.06] bg-studio-900/60 relative overflow-hidden">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center reveal-on-scroll">
-      <div class="font-mono text-[11px] text-amber-400/80 uppercase tracking-widest mb-3">
-        [ STUDIO PHILOSOPHY // 聲音的本質 ]
-      </div>
       <blockquote class="font-serif text-2xl sm:text-3xl font-bold text-sage-100 tracking-tight leading-snug mb-5">
         「機器只能捕獲分貝與頻率；<br class="hidden sm:block" />
         唯有專注的人耳，才能領會話語中的微光與重量。」
       </blockquote>
-      <p class="text-xs sm:text-sm text-slate-400 font-light leading-relaxed max-w-2xl mx-auto">
+      <p class="text-[13px] sm:text-sm text-slate-400 font-light leading-relaxed max-w-2xl mx-auto">
         每一份錄音背後，是一場嚴謹的研究、一次重大的決策、或是一段傾注熱情的創作。我們以聲音工程師的嚴謹，把混亂音頻梳理成排版洗練的繁體中文文本。
       </p>
     </div>
@@ -486,11 +427,8 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
       
       <div class="text-center mb-24 scroll-reveal-up">
-        <span class="font-mono text-xs text-amber-400 uppercase tracking-widest mb-2 block">
-          / 01 SYSTEM MODULES
-        </span>
         <h2 class="font-serif text-3xl sm:text-4xl font-bold text-sage-100">三大錄音室級轉譯模組</h2>
-        <p class="text-xs sm:text-sm text-slate-400 mt-2 font-mono">滑動解鎖各聲學場景規格・時間碼與在地化排版</p>
+        <p class="text-[13px] sm:text-sm text-slate-400 mt-2 font-mono">滑動解鎖各聲學場景規格・時間碼與在地化排版</p>
       </div>
 
       <div class="space-y-28">
@@ -500,22 +438,18 @@
           <div class="md:col-span-6 studio-card rounded-2xl p-2 group overflow-hidden scroll-reveal-left relative">
             <div class="laser-line"></div>
             <img 
-              src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=900&q=80" 
-              alt="法律訴訟法庭與醫療專科錄音" 
+              src="./assets/recording-studio.jpg" 
+              alt="專業錄音室的電容式麥克風、監聽耳機與混音控制台" 
               class="w-full h-72 sm:h-80 object-cover rounded-xl brightness-90 contrast-105 group-hover:scale-105 transition duration-700"
               loading="lazy"
             />
           </div>
           <div class="md:col-span-6 space-y-4 scroll-reveal-right">
-            <div class="font-mono text-xs text-amber-400/90 tracking-widest flex items-center gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-amber-400 inline-block shadow-sm shadow-amber-500/50"></span>
-              MODULE 01 // LEGAL & MEDICAL TRANSCRIPTION
-            </div>
             <h3 class="font-serif text-2xl font-bold text-sage-100">法律訴訟調查與醫療專科紀錄</h3>
             <p class="text-slate-400 text-sm leading-relaxed font-light">
               適用法庭詰問、訴訟蒐證通話、律師諮詢、專科醫學研討會及病歷討論。以極致專業嚴謹度進行法規判例與醫學專有名詞交叉查核，確保每字每句精準無誤，符合法律抗辯與醫療專業建檔規範。
             </p>
-            <ul class="font-mono text-xs text-slate-300 space-y-2.5 pt-2 border-t border-white/[0.06]">
+            <ul class="font-mono text-[13px] text-slate-300 space-y-2.5 pt-2 border-t border-white/[0.06]">
               <li class="stagger-item flex items-center gap-2.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400"></i> 嚴謹查證法律訴訟條文、法學術語與各科醫學名詞（專業術語 +30%）</li>
               <li class="stagger-item flex items-center gap-2.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400"></i> 支援訴訟蒐證專用精確時間戳記（Timestamp）與發言人嚴格標示</li>
               <li class="stagger-item flex items-center gap-2.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400"></i> 嚴格簽署保密協定（NDA），案件結案驗收後原檔全數抹除銷毀</li>
@@ -535,15 +469,11 @@
             />
           </div>
           <div class="md:col-span-6 md:order-1 space-y-4 scroll-reveal-left">
-            <div class="font-mono text-xs text-amber-400/90 tracking-widest flex items-center gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-amber-400 inline-block shadow-sm shadow-amber-500/50"></span>
-              MODULE 02 // ENTERPRISE CONFERENCE
-            </div>
             <h3 class="font-serif text-2xl font-bold text-sage-100">商務會議記錄與演講論壇講座</h3>
             <p class="text-slate-400 text-sm leading-relaxed font-light">
               適用跨國跨部門例會、董事會、線上培訓課程及大型公開研討會。專業濾除冗贅結巴與口頭禪，梳理出條理分明、層次清晰的高規格書面紀錄，直接交付 Word 即刻存檔。
             </p>
-            <ul class="font-mono text-xs text-slate-300 space-y-2.5 pt-2 border-t border-white/[0.06]">
+            <ul class="font-mono text-[13px] text-slate-300 space-y-2.5 pt-2 border-t border-white/[0.06]">
               <li class="stagger-item flex items-center gap-2.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400"></i> 精確校對金融、法律、科技各領域專業名詞</li>
               <li class="stagger-item flex items-center gap-2.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400"></i> 結構化條列式排版，大幅提升團隊閱讀效率</li>
               <li class="stagger-item flex items-center gap-2.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400"></i> 支援定期月結開立收據，專案經理最愛</li>
@@ -563,15 +493,11 @@
             />
           </div>
           <div class="md:col-span-6 space-y-4 scroll-reveal-right">
-            <div class="font-mono text-xs text-amber-400/90 tracking-widest flex items-center gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-amber-400 inline-block shadow-sm shadow-amber-500/50"></span>
-              MODULE 03 // TIMELINE & SUBTITLES
-            </div>
             <h3 class="font-serif text-2xl font-bold text-sage-100">YouTube 影片與 Podcast 字幕時間軸</h3>
             <p class="text-slate-400 text-sm leading-relaxed font-light">
               專為 YouTuber、Reels/Shorts 創作者與 Podcast 團隊打造。直接交付匹配 Premiere, Final Cut, 剪映與 CapCut 規範的 `.srt` 或 `.vtt` 時間碼檔案，節省創作者 80% 的耗時打字工作。
             </p>
-            <ul class="font-mono text-xs text-slate-300 space-y-2.5 pt-2 border-t border-white/[0.06]">
+            <ul class="font-mono text-[13px] text-slate-300 space-y-2.5 pt-2 border-t border-white/[0.06]">
               <li class="stagger-item flex items-center gap-2.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400"></i> 符合 YouTube CC 演算法抓取與在地繁體斷句</li>
               <li class="stagger-item flex items-center gap-2.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400"></i> 長期配合頻道建立專屬口癖與名詞詞彙庫</li>
               <li class="stagger-item flex items-center gap-2.5"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400"></i> 享優先固定交件檔期，穩定更新不延遲</li>
@@ -589,11 +515,8 @@
     <div class="max-w-5xl mx-auto px-4 sm:px-6">
       
       <div class="text-center mb-16 reveal-on-scroll">
-        <span class="font-mono text-xs text-amber-400 uppercase tracking-widest mb-2 block">
-          / 02 TRANSPARENT SPEC
-        </span>
         <h2 class="font-serif text-3xl sm:text-4xl font-bold text-sage-100">單軌計費規格・透明無隱藏</h2>
-        <p class="text-xs sm:text-sm text-slate-400 mt-2 font-mono">以影音分鐘為基準，單次或長期配合皆享最純粹的定價</p>
+        <p class="text-[13px] sm:text-sm text-slate-400 mt-2 font-mono">以影音分鐘為基準，單次或長期配合皆享最純粹的定價</p>
       </div>
 
       <!-- 方案銘牌卡片 (雙卡) -->
@@ -601,20 +524,20 @@
         
         <!-- 標準單次方案 (主推) -->
         <div class="studio-card rounded-2xl p-8 relative overflow-hidden flex flex-col justify-between reveal-on-scroll">
-          <div class="absolute top-0 right-0 studio-metal-plate text-amber-400 font-mono text-[10px] font-bold px-3 py-1 rounded-bl-lg border-b border-l border-amber-500/20">
+          <div class="absolute top-0 right-0 studio-metal-plate text-amber-400 font-mono text-[13px] font-bold px-3 py-1 rounded-bl-lg border-b border-l border-amber-500/20">
             FLAGSHIP STANDARD
           </div>
           <div>
-            <div class="font-mono text-xs text-slate-400 mb-1">標準繁體中文逐字稿</div>
+            <div class="font-mono text-[13px] text-slate-400 mb-1">標準繁體中文逐字稿</div>
             <div class="flex items-baseline gap-2 mb-4">
               <span class="font-mono text-4xl sm:text-5xl font-black text-sage-100">NT$ 15</span>
-              <span class="font-mono text-xs text-slate-400">/ 影音分鐘</span>
+              <span class="font-mono text-[13px] text-slate-400">/ 影音分鐘</span>
             </div>
-            <p class="text-xs text-slate-400 mb-6 font-light">
+            <p class="text-[13px] text-slate-400 mb-6 font-light">
               適合單次委託、重要商務會議、公開演講論壇及法律醫療專科音檔。
             </p>
 
-            <ul class="font-mono text-xs text-slate-300 space-y-3 pt-6 border-t border-white/[0.08] mb-8">
+            <ul class="font-mono text-[13px] text-slate-300 space-y-3 pt-6 border-t border-white/[0.08] mb-8">
               <li class="flex items-center gap-2.5">
                 <i data-lucide="check" class="w-4 h-4 text-amber-400"></i>
                 100% 人工專業耳機監聽與繁體標點校驗
@@ -639,14 +562,14 @@
                 <i data-lucide="file-text" class="w-4 h-4 text-slate-400"></i>
                 如需無時間軸檔案，斟酌收費（詳談）
               </li>
-              <li class="flex items-center gap-2.5 text-slate-500 text-[11px]">
+              <li class="flex items-center gap-2.5 text-slate-500 text-[13px]">
                 <i data-lucide="info" class="w-3.5 h-3.5 text-slate-500"></i>
                 單筆最低消費 10 分鐘（未滿 10 分鐘以 NT$ 150 計）
               </li>
             </ul>
           </div>
 
-          <a href="#calculator" class="w-full text-center py-3.5 rounded-xl font-mono text-xs font-bold text-studio-950 bg-gradient-to-r from-sage-200 to-sage-300 hover:from-white hover:to-sage-200 transition shadow-lg shadow-black/60">
+          <a href="#calculator" class="w-full text-center px-4 py-3.5 rounded-xl font-mono text-[13px] font-bold text-studio-950 transition bg-sage-200 hover:bg-sage-100">
             ▼ 下方啟動推桿試算費用
           </a>
         </div>
@@ -654,16 +577,16 @@
         <!-- 長期夥伴方案 -->
         <div class="studio-card rounded-2xl p-8 relative flex flex-col justify-between reveal-on-scroll">
           <div>
-            <div class="font-mono text-xs text-slate-400 mb-1">定期夥伴 / 專案合作</div>
+            <div class="font-mono text-[13px] text-slate-400 mb-1">定期夥伴 / 專案合作</div>
             <div class="flex items-baseline gap-2 mb-4">
               <span class="font-mono text-4xl sm:text-5xl font-black text-sage-200">客製優惠</span>
-              <span class="font-mono text-xs text-slate-400">/ 階梯折扣</span>
+              <span class="font-mono text-[13px] text-slate-400">/ 階梯折扣</span>
             </div>
-            <p class="text-xs text-slate-400 mb-6 font-light">
+            <p class="text-[13px] text-slate-400 mb-6 font-light">
               適合每週固定發片的創作者、機構研究室與品牌行銷團隊。
             </p>
 
-            <ul class="font-mono text-xs text-slate-300 space-y-3 pt-6 border-t border-white/[0.08] mb-8">
+            <ul class="font-mono text-[13px] text-slate-300 space-y-3 pt-6 border-t border-white/[0.08] mb-8">
               <li class="flex items-center gap-2.5">
                 <i data-lucide="check" class="w-4 h-4 text-amber-400"></i>
                 累積時長享有階梯式階梯折扣方案
@@ -683,7 +606,7 @@
             </ul>
           </div>
 
-          <a href="https://line.me/ti/p/~YOUR_LINE_ID" target="_blank" class="w-full text-center py-3.5 rounded-xl font-mono text-xs font-bold text-sage-300 studio-metal-plate hover:text-white transition">
+          <a href="#contact" data-contact="line" target="_blank" class="w-full text-center px-4 py-3.5 rounded-xl font-mono text-[13px] font-bold text-sage-300 studio-metal-plate hover:text-white transition">
             洽談長期合作優惠
           </a>
         </div>
@@ -691,29 +614,29 @@
       </div>
 
       <!-- 專業加成與時效交付規範矩陣 (Surcharge & Turnaround Specs Plate) -->
-      <div class="studio-card rounded-2xl p-6 sm:p-8 mb-16 reveal-on-scroll">
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-5 border-b border-white/[0.08] mb-6 font-mono text-xs">
+      <div class="pricing-details mb-16 reveal-on-scroll">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-5 border-b border-white/[0.08] mb-6 font-mono text-[13px]">
           <div class="flex items-center gap-2 text-sage-200 font-bold">
-            <span class="w-1.5 h-1.5 rounded-full bg-amber-400 inline-block shadow-sm shadow-amber-500/50"></span>
+            <span class="w-1.5 h-1.5 rounded-full bg-amber-400 inline-block"></span>
             SURCHARGE & TURNAROUND SPECS // 詳細計費加成與時效規範
           </div>
-          <div class="text-slate-400 text-[11px]">
+          <div class="text-slate-400 text-[13px]">
             透明公開・無任何隱藏費用
           </div>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-6 font-mono text-xs">
+        <div class="grid md:grid-cols-3 gap-6 font-mono text-[13px]">
           <!-- 項目 1: 專業術語加成 -->
           <div class="studio-metal-plate p-5 rounded-xl space-y-2 border border-white/[0.06] flex flex-col justify-between">
             <div>
-              <div class="text-[10px] text-amber-400 tracking-wider font-bold uppercase">/ 01 DOMAIN SURCHARGE</div>
+              <div class="text-[13px] text-amber-400 tracking-wider font-bold uppercase">/ 01 DOMAIN SURCHARGE</div>
               <div class="font-serif font-bold text-sage-100 text-base mt-1">法律及醫療專業術語</div>
               <div class="text-amber-300 font-bold text-xl my-1.5">+ 30%</div>
-              <p class="text-slate-400 font-sans text-xs leading-relaxed font-light">
+              <p class="text-slate-400 font-sans text-[13px] leading-relaxed font-light">
                 針對法庭詰問、訴訟調查錄音、專科醫學研討會、病歷報告等高度專業用語音檔，需大量文獻與專業名詞交叉查證比對。
               </p>
             </div>
-            <div class="pt-3 border-t border-white/[0.06] text-[10px] text-slate-500">
+            <div class="pt-3 border-t border-white/[0.06] text-[13px] text-slate-500">
               SPEC: 確保專有名詞 100% 正確率
             </div>
           </div>
@@ -721,37 +644,37 @@
           <!-- 項目 2: 交付時效分級 -->
           <div class="studio-metal-plate p-5 rounded-xl space-y-2 border border-white/[0.06] flex flex-col justify-between">
             <div>
-              <div class="text-[10px] text-amber-400 tracking-wider font-bold uppercase">/ 02 TURNAROUND SPECS</div>
+              <div class="text-[13px] text-amber-400 tracking-wider font-bold uppercase">/ 02 TURNAROUND SPECS</div>
               <div class="font-serif font-bold text-sage-100 text-base mt-1">交付時效階梯加成</div>
-              <div class="space-y-2 pt-2 text-slate-300 text-xs">
+              <div class="space-y-2 pt-2 text-slate-300 text-[13px]">
                 <div class="flex justify-between items-center py-1 border-b border-white/[0.05]">
-                  <span>一般件（標準排程）</span>
+                  <span>一般件（基本 3–5 工作天）</span>
                   <span class="text-sage-300 font-bold">正常計費</span>
                 </div>
                 <div class="flex justify-between items-center py-1 border-b border-white/[0.05]">
                   <div>
                     <span class="text-sage-100 font-semibold">急件</span>
-                    <span class="text-[10px] text-slate-400 block sm:inline">（交付約 2~3 天工作日）</span>
+                    <span class="text-[13px] text-slate-400 block sm:inline">（交付約 2~3 天工作日）</span>
                   </div>
                   <span class="text-amber-400 font-bold">+ 20%</span>
                 </div>
                 <div class="flex justify-between items-center py-1 border-b border-white/[0.05]">
                   <div>
                     <span class="text-sage-100 font-semibold">當日件</span>
-                    <span class="text-[10px] text-slate-400 block sm:inline">（交付約 8 小時）</span>
+                    <span class="text-[13px] text-slate-400 block sm:inline">（交付約 8 小時）</span>
                   </div>
                   <span class="text-amber-400 font-bold">+ 50%</span>
                 </div>
                 <div class="flex justify-between items-center py-1">
                   <div>
                     <span class="text-amber-300 font-semibold">特急件</span>
-                    <span class="text-[10px] text-slate-400 block sm:inline">（交付約 5 小時）</span>
+                    <span class="text-[13px] text-slate-400 block sm:inline">（交付約 5 小時）</span>
                   </div>
                   <span class="text-amber-300 font-bold">+ 100%</span>
                 </div>
               </div>
             </div>
-            <div class="pt-3 border-t border-white/[0.06] text-[10px] text-slate-500">
+            <div class="pt-3 border-t border-white/[0.06] text-[13px] text-slate-500">
               SPEC: 依檔案送達並確認排單起計
             </div>
           </div>
@@ -759,14 +682,14 @@
           <!-- 項目 3: 格式與時間軸規範 -->
           <div class="studio-metal-plate p-5 rounded-xl space-y-2 border border-white/[0.06] flex flex-col justify-between">
             <div>
-              <div class="text-[10px] text-amber-400 tracking-wider font-bold uppercase">/ 03 FORMAT & TIMELINE</div>
+              <div class="text-[13px] text-amber-400 tracking-wider font-bold uppercase">/ 03 FORMAT & TIMELINE</div>
               <div class="font-serif font-bold text-sage-100 text-base mt-1">時間軸與格式交付</div>
               <div class="text-sage-200 font-bold text-xl my-1.5">斟酌收費（詳談）</div>
-              <p class="text-slate-400 font-sans text-xs leading-relaxed font-light">
+              <p class="text-slate-400 font-sans text-[13px] leading-relaxed font-light">
                 預設免費附贈精準時間碼 Word / TXT / SRT 字幕檔。如因排版或印刷出版需求需<strong class="text-sage-200">「無時間軸檔案」</strong>，將依格式複雜度斟酌收費，歡迎直接加 LINE 詳談確認。
               </p>
             </div>
-            <div class="pt-3 border-t border-white/[0.06] text-[10px] text-slate-500">
+            <div class="pt-3 border-t border-white/[0.06] text-[13px] text-slate-500">
               SPEC: 支援純文字/排版客製化需求
             </div>
           </div>
@@ -778,17 +701,13 @@
         
         <div class="flex items-center justify-between pb-6 border-b border-white/[0.08] mb-8">
           <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-xl studio-metal-plate text-amber-400 flex items-center justify-center">
+            <div class="w-10 h-10 text-amber-400 flex items-center justify-center">
               <i data-lucide="sliders" class="w-5 h-5"></i>
             </div>
             <div>
               <h3 class="font-serif font-bold text-xl text-sage-100">錄音室費用試算台</h3>
-              <p class="font-mono text-[11px] text-slate-400">設定音檔時長、時效需求與專業領域，即時獲得精確透明報價</p>
+              <p class="font-mono text-[13px] text-slate-400">設定音檔時長、時效需求與專業領域，即時查看預估費用，正式金額依音檔確認</p>
             </div>
-          </div>
-          <div class="hidden sm:flex items-center gap-2 font-mono text-[11px] text-amber-400/80 studio-metal-plate px-3 py-1.5 rounded-lg">
-            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-            CONSOLE READY
           </div>
         </div>
 
@@ -799,62 +718,64 @@
             <!-- 1. 音檔長度推桿 -->
             <div>
               <div class="flex justify-between items-center mb-3">
-                <label class="font-mono text-xs text-sage-300 tracking-wider">01. AUDIO LENGTH // 音檔長度</label>
+                <label for="minutesInput" class="font-mono text-[13px] text-sage-300 tracking-wider">01. AUDIO LENGTH // 音檔長度</label>
                 <div class="flex items-center gap-1.5">
-                  <input type="number" id="minutesInput" value="30" min="1" max="600" class="w-20 px-2.5 py-1 text-center font-mono font-bold text-amber-400 bg-studio-950 border border-white/[0.12] rounded-lg focus:outline-none focus:border-amber-400 text-sm" />
-                  <span class="font-mono text-xs text-slate-400">MINS</span>
+                  <input type="number" id="minutesInput" value="30" min="1" max="600" step="1" aria-describedby="minutesHelp minutesError" class="w-20 px-3 py-2 text-center font-mono font-bold text-amber-400 bg-studio-950 border border-white/[0.12] rounded-lg focus:outline-none focus:border-amber-400 text-sm" />
+                  <span class="font-mono text-[13px] text-slate-400">MINS</span>
                 </div>
               </div>
 
               <!-- 仿 Neve/SSL 音訊推桿 -->
-              <input type="range" id="minutesRange" min="5" max="180" step="5" value="30" class="w-full cursor-pointer accent-sage-300" />
+              <input type="range" id="minutesRange" aria-label="音檔長度，分鐘" min="1" max="600" step="1" value="30" class="w-full cursor-pointer accent-sage-300" />
               
-              <div class="flex justify-between font-mono text-[10px] text-slate-500 mt-2">
-                <span>05m</span>
-                <span>30m</span>
-                <span>60m (1H)</span>
-                <span>120m</span>
-                <span>180m</span>
+              <div class="flex justify-between font-mono text-[13px] text-slate-500 mt-2">
+                <span>1m</span>
+                <span>150m</span>
+                <span>300m</span>
+                <span>450m</span>
+                <span>600m</span>
               </div>
+              <p id="minutesHelp">可試算 1–600 分鐘，請輸入整數；最低消費 NT$ 150。</p>
+              <p id="minutesError" role="status"></p>
             </div>
 
             <!-- 2. 時效需求選擇 -->
             <div>
-              <label class="block font-mono text-xs text-sage-300 tracking-wider mb-2.5">02. TURNAROUND // 交付時效需求</label>
-              <div class="grid grid-cols-2 gap-2.5 font-mono text-xs">
+              <label class="block font-mono text-[13px] text-sage-300 tracking-wider mb-2.5">02. TURNAROUND // 交付時效需求</label>
+              <div class="grid grid-cols-2 gap-2.5 font-mono text-[13px]">
                 <label class="relative flex items-center gap-2.5 p-3 rounded-xl studio-metal-plate cursor-pointer border border-white/[0.08] hover:border-amber-500/40 transition">
                   <input type="radio" name="turnaroundSpeed" value="standard" checked class="text-amber-500 focus:ring-0" />
                   <div>
                     <div class="text-sage-200 font-bold">一般標準件</div>
-                    <div class="text-[10px] text-slate-400">正常排程（無加收）</div>
+                    <div class="text-[13px] text-slate-400">基本 3–5 工作天，依各案確認（無加收）</div>
                   </div>
                 </label>
                 <label class="relative flex items-center gap-2.5 p-3 rounded-xl studio-metal-plate cursor-pointer border border-white/[0.08] hover:border-amber-500/40 transition">
                   <input type="radio" name="turnaroundSpeed" value="rush20" class="text-amber-500 focus:ring-0" />
                   <div>
-                    <div class="text-sage-200 font-bold flex items-center gap-1">急件 <span class="text-amber-400 text-[10px] font-mono">+20%</span></div>
-                    <div class="text-[10px] text-slate-400">約 2~3 天工作日</div>
+                    <div class="text-sage-200 font-bold flex items-center gap-1">急件 <span class="text-amber-400 text-[13px] font-mono">+20%</span></div>
+                    <div class="text-[13px] text-slate-400">約 2~3 天工作日</div>
                   </div>
                 </label>
                 <label class="relative flex items-center gap-2.5 p-3 rounded-xl studio-metal-plate cursor-pointer border border-white/[0.08] hover:border-amber-500/40 transition">
                   <input type="radio" name="turnaroundSpeed" value="sameDay50" class="text-amber-500 focus:ring-0" />
                   <div>
-                    <div class="text-sage-200 font-bold flex items-center gap-1">當日件 <span class="text-amber-400 text-[10px] font-mono">+50%</span></div>
-                    <div class="text-[10px] text-slate-400">約 8 小時交付</div>
+                    <div class="text-sage-200 font-bold flex items-center gap-1">當日件 <span class="text-amber-400 text-[13px] font-mono">+50%</span></div>
+                    <div class="text-[13px] text-slate-400">約 8 小時交付</div>
                   </div>
                 </label>
                 <label class="relative flex items-center gap-2.5 p-3 rounded-xl studio-metal-plate cursor-pointer border border-white/[0.08] hover:border-amber-500/40 transition">
                   <input type="radio" name="turnaroundSpeed" value="superRush100" class="text-amber-500 focus:ring-0" />
                   <div>
-                    <div class="text-sage-200 font-bold flex items-center gap-1">特急件 <span class="text-amber-300 text-[10px] font-mono">+100%</span></div>
-                    <div class="text-[10px] text-slate-400">約 5 小時交付</div>
+                    <div class="text-sage-200 font-bold flex items-center gap-1">特急件 <span class="text-amber-300 text-[13px] font-mono">+100%</span></div>
+                    <div class="text-[13px] text-slate-400">約 5 小時交付</div>
                   </div>
                 </label>
               </div>
             </div>
 
             <!-- 3. 專業領域與特殊需求勾選 -->
-            <div class="space-y-3 pt-1 font-mono text-xs">
+            <div class="space-y-3 pt-1 font-mono text-[13px]">
               <label class="flex items-center gap-3 cursor-pointer group">
                 <input type="checkbox" id="legalMedical" class="w-4 h-4 rounded bg-studio-950 border-white/[0.2] text-amber-500 focus:ring-0 focus:ring-offset-0" />
                 <span class="text-slate-300 group-hover:text-white transition">
@@ -877,27 +798,23 @@
           </div>
 
           <!-- 右側數位電壓錶金額儀表板 -->
-          <div class="md:col-span-5 studio-metal-plate p-6 sm:p-7 rounded-2xl text-center relative overflow-hidden">
-            <div class="font-mono text-[10px] text-slate-400 tracking-widest uppercase mb-1">
+          <div class="md:col-span-5 quote-result p-6 sm:p-7 text-center relative overflow-hidden">
+            <div class="font-mono text-[13px] text-slate-400 tracking-widest uppercase mb-1">
               ESTIMATED AMOUNT // 預估費用
             </div>
             
             <div class="font-mono text-4xl sm:text-5xl font-black text-amber-300 tracking-tight my-3">
-              <span class="text-2xl font-bold text-amber-400/80">NT$ </span><span id="totalPrice">450</span>
+              <span class="text-2xl font-bold text-amber-400">NT$ </span><span id="totalPrice" role="status" aria-live="polite" aria-atomic="true">450</span>
             </div>
 
-            <div id="priceNote" class="font-mono text-[11px] text-slate-400 mb-6">
+            <div id="priceNote" class="font-mono text-[13px] text-slate-400 mb-6">
               （30 分鐘 × NT$ 15 / 分鐘）
             </div>
 
             <div class="space-y-2.5">
-              <button onclick="contactWithQuote('line')" class="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl font-mono text-xs font-bold text-white bg-[#06C755] hover:bg-[#05b34c] shadow-lg shadow-emerald-950/60 transition transform hover:-translate-y-0.5">
+              <button onclick="contactWithQuote('line')" class="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl font-mono text-[13px] font-bold text-white bg-[#087f39] hover:bg-[#06682e] transition transform hover:-translate-y-0.5">
                 <i data-lucide="message-square" class="w-4 h-4"></i>
                 帶著此規格洽詢 LINE
-              </button>
-              <button onclick="contactWithQuote('email')" class="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl font-mono text-xs font-semibold text-slate-300 studio-metal-plate hover:text-white transition">
-                <i data-lucide="mail" class="w-4 h-4"></i>
-                透過 Email 諮詢
               </button>
             </div>
           </div>
@@ -909,46 +826,54 @@
     </div>
   </section>
 
+  <section class="pb-16 px-4 sm:px-6" aria-labelledby="quoteHeading">
+    <div class="max-w-5xl mx-auto studio-card rounded-2xl p-6 sm:p-8">
+      <h2 id="quoteHeading" class="font-serif text-xl font-bold text-sage-100 mb-3">你的詢價內容</h2>
+      <p class="text-slate-300 mb-4">調整試算選項後，內容會同步更新。確認後即可複製，透過 LINE 諮詢。</p>
+      <label for="quoteText" class="block text-sm text-sage-200 mb-2">詢價內容預覽</label>
+      <textarea id="quoteText" readonly></textarea>
+      <button id="copyQuote" type="button" class="mt-4 px-6 py-3 bg-sage-200 text-studio-950 rounded-xl font-bold hover:bg-white">複製詢價內容</button>
+      <p id="quoteStatus" role="status" aria-live="polite" class="mt-3"></p>
+    </div>
+  </section>
+
   <!-- 訊號流程 Workflow (Signal Chain) -->
   <section id="workflow" class="py-24 relative">
     <div class="max-w-5xl mx-auto px-4 sm:px-6">
       <div class="text-center mb-16 reveal-on-scroll">
-        <span class="font-mono text-xs text-amber-400 uppercase tracking-widest mb-2 block">
-          / 03 SIGNAL CHAIN
-        </span>
         <h2 class="font-serif text-3xl sm:text-4xl font-bold text-sage-100">4 步錄音室級作業鏈</h2>
-        <p class="text-xs sm:text-sm text-slate-400 mt-2 font-mono">標準化交付規範，確保音訊品質與時間無落差</p>
+        <p class="text-[13px] sm:text-sm text-slate-400 mt-2 font-mono">標準化交付規範，確保音訊品質與時間無落差</p>
       </div>
 
-      <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <div class="studio-card p-6 rounded-2xl reveal-on-scroll">
-          <div class="font-mono text-3xl font-black text-amber-400/40 mb-2">STAGE.01</div>
-          <h4 class="font-serif font-bold text-sage-100 text-base mb-1.5">雲端送件</h4>
-          <p class="text-xs text-slate-400 font-light leading-relaxed">
-            透過 LINE 或 Email 提供雲端硬碟連結（Google Drive / Dropbox）或影音連結。
+          <div class="font-mono text-3xl font-black text-amber-400 mb-2">STAGE.01</div>
+          <h3 class="font-serif font-bold text-sage-100 text-base mb-1.5">雲端送件</h3>
+          <p class="text-[13px] text-slate-400 font-light leading-relaxed">
+            透過 LINE 提供雲端硬碟連結（Google Drive / Dropbox）或影音連結。
           </p>
         </div>
 
         <div class="studio-card p-6 rounded-2xl reveal-on-scroll">
-          <div class="font-mono text-3xl font-black text-amber-400/40 mb-2">STAGE.02</div>
-          <h4 class="font-serif font-bold text-sage-100 text-base mb-1.5">聲學評估與報價</h4>
-          <p class="text-xs text-slate-400 font-light leading-relaxed">
+          <div class="font-mono text-3xl font-black text-amber-400 mb-2">STAGE.02</div>
+          <h3 class="font-serif font-bold text-sage-100 text-base mb-1.5">聲學評估與報價</h3>
+          <p class="text-[13px] text-slate-400 font-light leading-relaxed">
             2 小時內試聽音質背景雜音、確認時長與專有名詞，回覆確定報價與交件日期。
           </p>
         </div>
 
         <div class="studio-card p-6 rounded-2xl reveal-on-scroll">
-          <div class="font-mono text-3xl font-black text-amber-400/40 mb-2">STAGE.03</div>
-          <h4 class="font-serif font-bold text-sage-100 text-base mb-1.5">耳機監聽微觀轉譯</h4>
-          <p class="text-xs text-slate-400 font-light leading-relaxed">
+          <div class="font-mono text-3xl font-black text-amber-400 mb-2">STAGE.03</div>
+          <h3 class="font-serif font-bold text-sage-100 text-base mb-1.5">耳機監聽微觀轉譯</h3>
+          <p class="text-[13px] text-slate-400 font-light leading-relaxed">
             逐字聽打、秒級時間軸同步、標點符號反覆校對，確保語意邏輯清晰通暢。
           </p>
         </div>
 
         <div class="studio-card p-6 rounded-2xl reveal-on-scroll">
-          <div class="font-mono text-3xl font-black text-amber-400/40 mb-2">STAGE.04</div>
-          <h4 class="font-serif font-bold text-sage-100 text-base mb-1.5">驗收結案與銷毀</h4>
-          <p class="text-xs text-slate-400 font-light leading-relaxed">
+          <div class="font-mono text-3xl font-black text-amber-400 mb-2">STAGE.04</div>
+          <h3 class="font-serif font-bold text-sage-100 text-base mb-1.5">驗收結案與銷毀</h3>
+          <p class="text-[13px] text-slate-400 font-light leading-relaxed">
             交付 Word/SRT 檔案，享有免費微調；驗收完畢後依 NDA 規範全數銷毀原檔。
           </p>
         </div>
@@ -960,13 +885,10 @@
   <section id="faq" class="py-20 border-t border-white/[0.06] bg-studio-900/60">
     <div class="max-w-4xl mx-auto px-4 sm:px-6">
       <div class="text-center mb-14 reveal-on-scroll">
-        <span class="font-mono text-xs text-amber-400 uppercase tracking-widest mb-2 block">
-          / 04 Q & A
-        </span>
         <h2 class="font-serif text-3xl font-bold text-sage-100">常見問題與規範</h2>
       </div>
 
-      <div class="space-y-4 font-mono text-xs">
+      <div class="space-y-4 font-mono text-[13px]">
         <details class="group studio-card p-5 rounded-2xl cursor-pointer [&_summary::-webkit-details-marker]:hidden">
           <summary class="flex justify-between items-center font-bold text-sage-200">
             <span>如果音檔背景雜音較多或多人同時說話，價格會調整嗎？</span>
@@ -988,13 +910,13 @@
           </summary>
           <div class="text-slate-400 mt-3 font-sans leading-relaxed text-sm space-y-2">
             <p>我們提供四種不同交付時效等級，滿足各類突發緊急排程：</p>
-            <ul class="list-disc list-inside space-y-1 text-slate-300 text-xs font-mono">
-              <li><strong>一般件</strong>：正常排程（依音檔長度約 3~5 工作日，無加收）</li>
+            <ul class="list-disc list-inside space-y-1 text-slate-300 text-[13px] font-mono">
+              <li><strong>一般件</strong>：基本為 3–5 工作天，實際交期依各案需求與排程確認（無加收）</li>
               <li><strong>急件</strong>：加收 20%（交付時間約 2~3 天工作日）</li>
               <li><strong>當日件</strong>：加收 50%（交付時間約 8 小時）</li>
               <li><strong>特急件</strong>：加收 100%（交付時間約 5 小時）</li>
             </ul>
-            <p class="text-[11px] text-slate-500">※ 時效起算點自檔案完整送達並確認排單時間起計，特急件與當日件請務必先加 LINE 確認檔期。</p>
+            <p class="text-[13px] text-slate-500">※ 時效起算點自檔案完整送達並確認排單時間起計，特急件與當日件請務必先加 LINE 確認檔期。</p>
           </div>
         </details>
 
@@ -1052,50 +974,28 @@
   <!-- 聯絡方式 Contact Section -->
   <section id="contact" class="py-24 relative">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center reveal-on-scroll">
-      <div class="w-12 h-12 studio-metal-plate text-amber-400 rounded-2xl flex items-center justify-center mx-auto mb-4">
-        <i data-lucide="radio" class="w-6 h-6"></i>
-      </div>
       <h2 class="font-serif text-3xl font-bold text-sage-100 mb-3">立即聯繫・預約排程</h2>
       <p class="text-slate-400 max-w-xl mx-auto mb-12 text-sm font-light">
-        有任何音檔轉譯需求或想洽談長期合作？歡迎透過 LINE 或 Email 與我聯絡，我將在最短時間內回覆您！
+        有任何音檔轉譯需求或想洽談長期合作？歡迎透過 LINE 與我聯絡，我將在最短時間內回覆您！
       </p>
 
-      <div class="grid sm:grid-cols-2 gap-6 max-w-xl mx-auto text-left font-mono">
+      <p id="contactStatus" role="status" class="mb-6">聯絡方式待設定，目前可先試算費用與複製詢價內容。</p>
+      <div class="grid gap-6 max-w-[276px] mx-auto text-left font-mono">
         <!-- LINE 聯絡卡片 -->
-        <a href="https://line.me/ti/p/~YOUR_LINE_ID" target="_blank" rel="noopener noreferrer" class="studio-card p-6 rounded-2xl hover:border-emerald-500/40 transition group flex flex-col justify-between">
+        <a href="#contact" data-contact="line" target="_blank" rel="noopener noreferrer" class="studio-card min-h-[165px] p-6 rounded-2xl hover:border-emerald-500/40 transition group flex flex-col justify-between">
           <div>
             <div class="flex items-center gap-3 mb-3">
-              <div class="w-10 h-10 rounded-xl bg-[#06C755] text-white flex items-center justify-center font-bold">
+              <div class="w-10 h-10 rounded-xl bg-[#087f39] text-white flex items-center justify-center font-bold">
                 <i data-lucide="message-square" class="w-5 h-5"></i>
               </div>
               <div>
                 <div class="font-bold text-sage-100 text-sm">LINE 官方專線</div>
-                <div class="text-[10px] text-slate-500 font-normal">最快回覆管道</div>
+                <div class="text-[13px] text-slate-500 font-normal">最快回覆管道</div>
               </div>
             </div>
-            <p class="text-xs text-slate-400 mb-4">ID：<span class="text-sage-200 font-bold">@yourlineid</span></p>
           </div>
-          <span class="inline-flex items-center text-xs font-bold text-emerald-400 group-hover:translate-x-1 transition">
+          <span class="inline-flex items-center text-[13px] font-bold text-emerald-400 group-hover:translate-x-1 transition">
             開啟 LINE 諮詢 <i data-lucide="arrow-right" class="w-3.5 h-3.5 ml-1"></i>
-          </span>
-        </a>
-
-        <!-- Email 聯絡卡片 -->
-        <a href="mailto:your.email@example.com?subject=【音檔轉譯詢價】" class="studio-card p-6 rounded-2xl hover:border-amber-500/40 transition group flex flex-col justify-between">
-          <div>
-            <div class="flex items-center gap-3 mb-3">
-              <div class="w-10 h-10 rounded-xl studio-metal-plate text-amber-400 flex items-center justify-center font-bold">
-                <i data-lucide="mail" class="w-5 h-5"></i>
-              </div>
-              <div>
-                <div class="font-bold text-sage-100 text-sm">電子郵件 Email</div>
-                <div class="text-[10px] text-slate-500 font-normal">適合長篇檔案需求</div>
-              </div>
-            </div>
-            <p class="text-xs text-slate-400 mb-4 break-all">your.email@example.com</p>
-          </div>
-          <span class="inline-flex items-center text-xs font-bold text-amber-400 group-hover:translate-x-1 transition">
-            發送信件諮詢 <i data-lucide="arrow-right" class="w-3.5 h-3.5 ml-1"></i>
           </span>
         </a>
       </div>
@@ -1103,11 +1003,11 @@
   </section>
 
   <!-- 頁尾 Footer -->
-  <footer class="bg-studio-950 py-12 text-xs border-t border-white/[0.06] text-slate-500 font-mono">
+  <footer class="bg-studio-950 py-12 text-[13px] border-t border-white/[0.06] text-slate-500 font-mono">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 space-y-6">
       <div class="flex flex-col sm:flex-row items-center justify-between gap-4 border-b border-white/[0.06] pb-6">
         <div class="flex items-center gap-2 text-sage-300">
-          <span class="font-serif font-bold text-sm">文字音律工作室</span>
+          <span class="font-serif font-bold text-sm">音律工作室</span>
           <span>// 專業錄音室級繁體中文音檔轉譯</span>
         </div>
         <div>
@@ -1116,7 +1016,7 @@
       </div>
 
       <!-- SEO 友善標籤 -->
-      <div class="text-[11px] text-slate-600 leading-relaxed text-center sm:text-left font-sans">
+      <div class="text-[13px] text-slate-600 leading-relaxed text-center sm:text-left font-sans">
         <span class="text-slate-500 font-semibold font-mono">INDEX KEYWORDS:</span>
         逐字稿聽打 ｜ 音檔轉文字 ｜ 商務會議記錄 ｜ 法律錄音逐字稿 ｜ 醫療專業聽打 ｜ 調查公聽會記錄 ｜ YouTube影片字幕製作 ｜ Podcast音檔轉文字 ｜ SRT字幕壓制 ｜ 繁體中文聽打每分鐘15元
       </div>
@@ -1126,279 +1026,22 @@
   <!-- 右下角常駐浮動按鈕（Studio Floating Console Hub） -->
   <div class="fixed bottom-6 right-5 z-50 flex flex-col items-end gap-3 font-mono">
     <!-- 常駐 LINE 懸浮按鈕 -->
-    <a href="https://line.me/ti/p/~YOUR_LINE_ID" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-2">
-      <span class="hidden sm:inline-block bg-studio-900/90 text-sage-200 text-xs px-3 py-1.5 rounded-lg border border-white/[0.1] shadow-2xl opacity-0 group-hover:opacity-100 transition duration-300">
+    <a href="#contact" data-contact="line" target="_blank" rel="noopener noreferrer" aria-label="LINE 聯絡與詢價" class="group flex items-center gap-2">
+      <span class="hidden sm:inline-block bg-studio-900/90 text-sage-200 text-[13px] px-3 py-1.5 rounded-lg border border-white/[0.1] opacity-0 group-hover:opacity-100 transition duration-300">
         LINE 立即試算排單
       </span>
-      <div class="w-12 h-12 rounded-full bg-[#06C755] hover:bg-[#05b34c] text-white shadow-xl shadow-emerald-950/60 flex items-center justify-center transition transform group-hover:scale-105 border border-white/20">
+      <div class="w-12 h-12 rounded-full bg-[#087f39] hover:bg-[#06682e] text-white flex items-center justify-center transition transform group-hover:scale-105 border border-white/20">
         <i data-lucide="message-square" class="w-5 h-5"></i>
       </div>
     </a>
 
     <!-- 回到頂端 TOP 按鈕 -->
-    <button id="backToTop" onclick="scrollToTop()" class="w-10 h-10 rounded-full studio-metal-plate text-slate-300 shadow-xl flex items-center justify-center transition opacity-0 pointer-events-none hover:text-white">
+    <button id="backToTop" aria-label="回到頁首" tabindex="-1" onclick="scrollToTop()" class="w-10 h-10 rounded-full studio-metal-plate text-slate-300 flex items-center justify-center transition opacity-0 pointer-events-none hover:text-white">
       <i data-lucide="chevron-up" class="w-4 h-4"></i>
     </button>
   </div>
 
-  <!-- JavaScript: 試算器、滑鼠追光、即時音訊示波器、動態 VU 電平表 -->
-  <script>
-    // 1. 初始化 Lucide 圖示
-    lucide.createIcons();
-
-    // 2. @webloved 標誌性特效：滑鼠追蹤動態微光 (Cursor Spotlight)
-    const spotlight = document.getElementById('ambient-spotlight');
-    window.addEventListener('mousemove', (e) => {
-      document.documentElement.style.setProperty('--mouse-x', `${e.clientX}px`);
-      document.documentElement.style.setProperty('--mouse-y', `${e.clientY}px`);
-    });
-
-    // 3. 3D 視差微傾斜效果 (Hero Card Tilt on Mouse Move)
-    const heroCard = document.getElementById('heroCard');
-    if (heroCard) {
-      heroCard.addEventListener('mousemove', (e) => {
-        const rect = heroCard.getBoundingClientRect();
-        const x = e.clientX - rect.left - rect.width / 2;
-        const y = e.clientY - rect.top - rect.height / 2;
-        heroCard.style.transform = `perspective(1000px) rotateX(${-y * 0.03}deg) rotateY(${x * 0.03}deg) translateY(-2px)`;
-      });
-      heroCard.addEventListener('mouseleave', () => {
-        heroCard.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0)';
-      });
-    }
-
-    // 4. 真實 60FPS 錄音室音訊示波器動畫 (Live Oscilloscope Canvas)
-    const canvas = document.getElementById('audioOscilloscope');
-    if (canvas) {
-      const ctx = canvas.getContext('2d');
-      canvas.width = canvas.offsetWidth * window.devicePixelRatio || 400;
-      canvas.height = canvas.offsetHeight * window.devicePixelRatio || 60;
-      ctx.scale(window.devicePixelRatio || 1, window.devicePixelRatio || 1);
-
-      let step = 0;
-      function animateWave() {
-        const w = canvas.offsetWidth;
-        const h = canvas.offsetHeight;
-        ctx.clearRect(0, 0, w, h);
-
-        step += 0.045;
-
-        // 背景微弱基底網格
-        ctx.strokeStyle = 'rgba(255, 255, 255, 0.03)';
-        ctx.lineWidth = 1;
-        ctx.beginPath();
-        ctx.moveTo(0, h / 2);
-        ctx.lineTo(w, h / 2);
-        ctx.stroke();
-
-        // 琥珀色主音頻波形 (Primary Warm Waveform)
-        ctx.beginPath();
-        ctx.lineWidth = 2;
-        ctx.strokeStyle = '#f59e0b';
-        ctx.shadowColor = 'rgba(245, 158, 11, 0.5)';
-        ctx.shadowBlur = 8;
-
-        for (let x = 0; x < w; x++) {
-          const envelope = Math.sin((x / w) * Math.PI); // 兩側漸變收斂
-          const y = (h / 2) + (Math.sin(x * 0.04 + step) * 11 + Math.sin(x * 0.08 - step * 1.5) * 5) * envelope;
-          if (x === 0) ctx.moveTo(x, y);
-          else ctx.lineTo(x, y);
-        }
-        ctx.stroke();
-
-        // 鼠尾草灰次諧波微光 (Secondary Harmonic Wave)
-        ctx.shadowBlur = 0;
-        ctx.beginPath();
-        ctx.lineWidth = 1;
-        ctx.strokeStyle = 'rgba(184, 196, 185, 0.5)';
-        for (let x = 0; x < w; x++) {
-          const envelope = Math.sin((x / w) * Math.PI);
-          const y = (h / 2) + Math.cos(x * 0.05 - step * 1.2) * 8 * envelope;
-          if (x === 0) ctx.moveTo(x, y);
-          else ctx.lineTo(x, y);
-        }
-        ctx.stroke();
-
-        requestAnimationFrame(animateWave);
-      }
-      animateWave();
-    }
-
-    // 5. 錄音室立體聲電平表即時跳動 (Dancing VU Meters)
-    const vuLeft = document.getElementById('vuLeft');
-    const vuRight = document.getElementById('vuRight');
-    if (vuLeft && vuRight) {
-      const leftLeds = vuLeft.querySelectorAll('span');
-      const rightLeds = vuRight.querySelectorAll('span');
-
-      setInterval(() => {
-        const levelL = Math.floor(Math.random() * 6);
-        const levelR = Math.floor(Math.random() * 6);
-        
-        leftLeds.forEach((led, i) => {
-          led.style.opacity = i <= levelL ? '1' : '0.15';
-        });
-        rightLeds.forEach((led, i) => {
-          led.style.opacity = i <= levelR ? '1' : '0.15';
-        });
-      }, 120);
-    }
-
-    // 6. 試算器邏輯與推桿反饋
-    const minutesRange = document.getElementById('minutesRange');
-    const minutesInput = document.getElementById('minutesInput');
-    const legalMedical = document.getElementById('legalMedical');
-    const noTimestamp = document.getElementById('noTimestamp');
-    const addSrt = document.getElementById('addSrt');
-    const totalPriceEl = document.getElementById('totalPrice');
-    const priceNoteEl = document.getElementById('priceNote');
-    document.getElementById('currentYear').innerText = new Date().getFullYear();
-
-    const RATE_PER_MINUTE = 15;
-    const MINIMUM_CHARGE = 150; // 最低消費 10 分鐘
-
-    function getSelectedTurnaround() {
-      const selected = document.querySelector('input[name="turnaroundSpeed"]:checked');
-      return selected ? selected.value : 'standard';
-    }
-
-    function calculate() {
-      let minutes = parseInt(minutesInput.value) || 0;
-      if (minutes < 0) minutes = 0;
-
-      let basePrice = minutes * RATE_PER_MINUTE;
-      let isUnderMin = false;
-      if (minutes > 0 && basePrice < MINIMUM_CHARGE) {
-        basePrice = MINIMUM_CHARGE;
-        isUnderMin = true;
-      }
-
-      // 1. 專業領域加成：法律及醫療相關專業術語加收 30%
-      let domainRate = (legalMedical && legalMedical.checked) ? 0.30 : 0;
-
-      // 2. 時效分級加成：一般件 0% / 急件 20% / 當日件 50% / 特急件 100%
-      let speed = getSelectedTurnaround();
-      let speedRate = 0;
-      let speedLabel = '';
-      if (speed === 'rush20') {
-        speedRate = 0.20;
-        speedLabel = '急件 20%（約 2~3 天）';
-      } else if (speed === 'sameDay50') {
-        speedRate = 0.50;
-        speedLabel = '當日件 50%（約 8 小時）';
-      } else if (speed === 'superRush100') {
-        speedRate = 1.00;
-        speedLabel = '特急件 100%（約 5 小時）';
-      }
-
-      // 總金額計算（相加加成百分比）
-      let totalRate = domainRate + speedRate;
-      let finalPrice = basePrice;
-      if (minutes > 0) {
-        finalPrice = Math.round(basePrice * (1 + totalRate));
-      }
-
-      // 構建詳細計算備註
-      let noteParts = [];
-      if (isUnderMin) {
-        noteParts.push(`未滿低消以 NT$ ${MINIMUM_CHARGE} 計`);
-      } else {
-        noteParts.push(`${minutes} 分鐘 × NT$ ${RATE_PER_MINUTE} / 分`);
-      }
-
-      if (domainRate > 0) {
-        noteParts.push('法律醫療專業術語 +30%');
-      }
-      if (speedRate > 0) {
-        noteParts.push(speedLabel);
-      }
-      if (noTimestamp && noTimestamp.checked) {
-        noteParts.push('需無時間軸檔案（斟酌收費詳談）');
-      }
-
-      totalPriceEl.innerText = finalPrice.toLocaleString();
-      priceNoteEl.innerText = `（${noteParts.join(' + ')}）`;
-    }
-
-    minutesRange.addEventListener('input', (e) => {
-      minutesInput.value = e.target.value;
-      calculate();
-    });
-
-    minutesInput.addEventListener('input', (e) => {
-      minutesRange.value = e.target.value;
-      calculate();
-    });
-
-    document.querySelectorAll('input[name="turnaroundSpeed"]').forEach(radio => {
-      radio.addEventListener('change', calculate);
-    });
-
-    if (legalMedical) legalMedical.addEventListener('change', calculate);
-    if (noTimestamp) noTimestamp.addEventListener('change', calculate);
-    if (addSrt) addSrt.addEventListener('change', calculate);
-
-    function contactWithQuote(type) {
-      const minutes = minutesInput.value;
-      const total = totalPriceEl.innerText;
-      const speed = getSelectedTurnaround();
-
-      let speedDesc = '一般標準件（正常排程）';
-      if (speed === 'rush20') speedDesc = '急件（約 2~3 天工作日交付，加收 20%）';
-      if (speed === 'sameDay50') speedDesc = '當日件（約 8 小時交付，加收 50%）';
-      if (speed === 'superRush100') speedDesc = '特急件（約 5 小時交付，加收 100%）';
-
-      const domainDesc = (legalMedical && legalMedical.checked) ? '是（法律／醫療專業術語，加收 30%）' : '否（一般領域）';
-      const noTimeDesc = (noTimestamp && noTimestamp.checked) ? '是（需無時間軸檔案，想進一步詳談費用）' : '否（標準交付 Word/TXT/SRT）';
-
-      const message = `你好！我在您的網站上試算音檔轉譯：\n・音檔時長：約 ${minutes} 分鐘\n・專業領域：${domainDesc}\n・時效需求：${speedDesc}\n・格式需求：${noTimeDesc}\n・預估試算金額：NT$ ${total}\n想進一步提供檔案請您評估與排程，謝謝！`;
-
-      if (type === 'line') {
-        navigator.clipboard?.writeText(message);
-        alert(`已為您複製諮詢文字！\n即將開啟 LINE，您可以直接貼上訊息傳送給我們。`);
-        window.open('https://line.me/ti/p/~YOUR_LINE_ID', '_blank');
-      } else if (type === 'email') {
-        const subject = encodeURIComponent(`【音檔轉譯詢價】約 ${minutes} 分鐘音檔（${speedDesc.split('（')[0]}）`);
-        const body = encodeURIComponent(message);
-        window.location.href = `mailto:your.email@example.com?subject=${subject}&body=${body}`;
-      }
-    }
-
-    // 7. 電影級滾動進場動畫監聽 (左右滑入 + 縮放 + 子項目瀑布流 + 雷射光掃描)
-    const revealElements = document.querySelectorAll(
-      '.reveal-on-scroll, .scroll-reveal-left, .scroll-reveal-right, .scroll-reveal-up'
-    );
-    const revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible', 'is-revealed');
-        }
-      });
-    }, { 
-      threshold: 0.15,
-      rootMargin: '0px 0px -40px 0px'
-    });
-
-    revealElements.forEach(el => revealObserver.observe(el));
-
-    // 8. 回到頂端按鈕 (原生滑順滾動)
-    const backToTopBtn = document.getElementById('backToTop');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 350) {
-        backToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
-        backToTopBtn.classList.add('opacity-100', 'pointer-events-auto');
-      } else {
-        backToTopBtn.classList.remove('opacity-100', 'pointer-events-auto');
-        backToTopBtn.classList.add('opacity-0', 'pointer-events-none');
-      }
-    });
-
-    function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
-    // 初始計算
-    calculate();
-  </script>
+  <noscript><p style="padding:24px;color:#eef2ee;background:#171c29">費用試算需要 JavaScript。標準費率每分鐘 NT$ 15，最低消費 NT$ 150；請開啟 JavaScript 使用試算。</p></noscript>
+  </div>
 </body>
 </html>

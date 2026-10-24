@@ -1,0 +1,25 @@
+const {test}=require('node:test');
+const assert=require('node:assert/strict');
+const {readFileSync,readdirSync}=require('node:fs');
+const {execFileSync}=require('node:child_process');
+const {resolve}=require('node:path');
+test('公開成品排除編輯器，保留樣式與報價，且不修改可編輯的預覽版',()=>{
+  const root=resolve(__dirname,'..');
+  const source=readFileSync(resolve(root,'index.html'),'utf8');
+  execFileSync(process.execPath,['scripts/package.mjs'],{cwd:root,stdio:'pipe'});
+  assert.equal(readFileSync(resolve(root,'index.html'),'utf8'),source);
+  assert.match(source,/assets\/designer\.js/);
+  const html=readFileSync(resolve(root,'dist/index.html'),'utf8');
+  assert.doesNotMatch(html,/assets\/designer\.(js|css)/);
+  assert.match(html,/assets\/theme-runtime\.js/);
+  assert.match(html,/assets\/theme\.css/);
+  assert.match(html,/assets\/quote\.js/);
+  assert.match(html,/id="minutesInput"/);
+  const files=readdirSync(resolve(root,'dist/assets'));
+  assert.equal(files.includes('designer.js'),false);
+  assert.equal(files.includes('designer.css'),false);
+  const runtime=readFileSync(resolve(root,'dist/assets/theme-runtime.js'),'utf8');
+  const engine=readFileSync(resolve(root,'dist/assets/theme-engine.js'),'utf8');
+  assert.doesNotMatch(runtime+engine,/localStorage|studioDesigner|designToggle|設計面板/);
+  assert.match(runtime,/STUDIO_CONFIG\?\.design/);
+});

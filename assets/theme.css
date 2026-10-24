@@ -1,0 +1,49 @@
+/* The site and the inspector have independent visual tokens. */
+:root { --design-background:#05070a; }
+html[data-studio-design] body { background-color:var(--design-background); color:var(--design-text); background-image:radial-gradient(circle 1000px at 12% 0%,var(--design-wash),transparent 75%); }
+#sitePreview[data-design-active] { color:var(--design-text); }
+#sitePreview[data-design-active] [data-design-text] { font-size:max(13px,calc(var(--original-size) * var(--text-scale))) !important; line-height:calc(var(--original-leading) * var(--text-scale) * var(--leading-scale)) !important; letter-spacing:calc(var(--original-tracking) * var(--text-scale) + var(--design-tracking)) !important; }
+#sitePreview[data-design-active] [data-design-text=body] { --text-scale:var(--design-body-scale); --leading-scale:var(--design-body-leading); font-family:var(--design-body-font) !important; }
+#sitePreview[data-design-active] [data-design-text=label] { --text-scale:var(--design-label-scale); --leading-scale:1; font-family:var(--design-label-font) !important; }
+#sitePreview[data-design-active] [data-design-text=heading] { --text-scale:var(--design-heading-scale); --leading-scale:var(--design-heading-leading); font-family:var(--design-heading-font) !important; }
+#sitePreview[data-heading-weight]:not([data-heading-weight=original]) [data-design-text=heading] { font-weight:var(--design-heading-weight) !important; }
+#sitePreview[data-heading-align=left] :is(h1,h2,h3,h4,blockquote) { text-align:left; }
+#sitePreview[data-heading-align=center] :is(h1,h2,h3,h4,blockquote) { text-align:center; }
+#sitePreview[data-design-active] [class*="text-slate-"] { color:var(--design-text) !important; }
+#sitePreview[data-design-active] :is(.text-slate-500,.text-slate-600) { color:var(--design-muted) !important; }
+#sitePreview[data-design-active] [class*="text-sage-"] { color:var(--design-heading) !important; }
+#sitePreview[data-design-active] [class*="text-amber-"] { color:var(--design-accent) !important; }
+#sitePreview[data-design-active] .studio-card { background:var(--design-surface); }
+#sitePreview[data-design-active] .studio-metal-plate { background:var(--design-raised); }
+#sitePreview[data-design-active] .pricing-details > .grid > div,
+#sitePreview[data-design-active] #calculator .quote-result { background:transparent; }
+#sitePreview[data-design-active] [class*="bg-studio-"] { background-color:var(--design-field) !important; }
+#sitePreview[data-design-active] [class*="bg-amber-"] { background-color:var(--design-accent) !important; }
+#sitePreview[data-design-active] [class*="bg-amber-"][class*="/"] { background-color:var(--design-wash) !important; }
+#sitePreview[data-design-active] [data-design-primary] { background:var(--design-primary) !important; color:var(--design-primary-ink) !important; }
+#sitePreview[data-design-active] [data-design-primary]:hover { filter:brightness(.95); }
+#sitePreview[data-design-active] #quoteText { color:var(--design-text); background:var(--design-field); border-color:var(--design-muted); }
+#sitePreview[data-design-active] :is(#quoteStatus,#contactStatus,#minutesHelp) { color:var(--design-text); }
+#sitePreview[data-design-active] :focus-visible { outline-color:var(--design-accent); }
+#sitePreview[data-design-active] :is(input,textarea) { caret-color:var(--design-accent); accent-color:var(--design-accent); }
+#sitePreview[data-design-active] [data-design-container] { max-width:calc(var(--original-width-ratio) * var(--design-width)); }
+#sitePreview[data-design-active] [data-design-section] { padding-top:calc(var(--original-top) * var(--design-section-space)); padding-bottom:calc(var(--original-bottom) * var(--design-section-space)); }
+#sitePreview[data-design-active] [data-design-gap] { row-gap:calc(var(--original-row-gap) * var(--design-gap)); column-gap:calc(var(--original-column-gap) * var(--design-gap)); }
+#sitePreview[data-design-active] [data-design-panel] { padding:calc(var(--original-pad-top) * var(--design-padding)) calc(var(--original-pad-right) * var(--design-padding)) calc(var(--original-pad-bottom) * var(--design-padding)) calc(var(--original-pad-left) * var(--design-padding)); border-radius:calc(var(--original-radius) * var(--design-radius)); }
+#sitePreview[data-design-active] img { filter:var(--original-filter,brightness(1)) saturate(var(--design-saturation)); }
+html[data-design-texture=off] body { background-image:none; }
+html[data-design-texture=off] :is(.studio-grain,#ambient-spotlight,.studio-signal-rail,.laser-line) { display:none !important; }
+html[data-design-motion=off] #sitePreview *,html[data-design-motion=off] #sitePreview *::before,html[data-design-motion=off] #sitePreview *::after { animation:none !important; transition:none !important; scroll-behavior:auto !important; }
+html[data-design-motion=off] #heroCard { transform:none !important; }
+#sitePreview[data-design-active] #ambient-spotlight { background:radial-gradient(800px circle at var(--mouse-x,20%) var(--mouse-y,20%),var(--design-wash),transparent 75%); }
+
+#sitePreview header > .max-w-6xl { container-type:inline-size; container-name:studio-header; }
+@container studio-header (max-width:1000px) { #sitePreview header nav { display:none !important; } }
+#sitePreview [data-design-text] { overflow-wrap:anywhere; min-width:0; }
+@media (max-width:639px) {
+  #sitePreview[data-design-active] header .brand-name { font-size:min(calc(var(--original-size) * var(--design-heading-scale)),20px) !important; }
+  #sitePreview[data-design-active] header [href="#calculator"] { padding-inline:10px !important; column-gap:6px !important; }
+}
+
+#sitePreview[data-design-active] #minutesError { color:var(--design-error); }
+#sitePreview[data-design-active] input[aria-invalid=true] { border-color:var(--design-error); }

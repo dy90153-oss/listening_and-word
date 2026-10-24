@@ -1,6 +1,3 @@
-# 允許所有搜尋引擎爬蟲抓取全站內容
+# 預覽版；正式上線後才開放索引並補上正確 Sitemap 網址
 User-agent: *
-Allow: /
-
-# 網站地圖位置 (GitHub Pages 正式網址)
-Sitemap: https://dy90153-oss.github.io/listening_and-word/sitemap.xml
+Disallow: /
