@@ -18,7 +18,8 @@
         el.style.setProperty('--original-tracking',css.letterSpacing==='normal'?'0px':css.letterSpacing);
       }
       if(el.matches('.max-w-6xl,.max-w-5xl,.max-w-4xl')){
-        el.dataset.designContainer='';el.style.setProperty('--original-width-ratio',parseFloat(css.maxWidth)/1152);
+        const baseline=el.classList.contains('max-w-6xl')?1152:el.classList.contains('max-w-5xl')?1024:896;
+        el.dataset.designContainer='';el.style.setProperty('--original-width-ratio',baseline/1152);
       }
       if(el.tagName==='SECTION'){
         el.dataset.designSection='';el.style.setProperty('--original-top',css.paddingTop);el.style.setProperty('--original-bottom',css.paddingBottom);
