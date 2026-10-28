@@ -1,6 +1,6 @@
 # A/B website comparison
 
-URL: /compare/index.html. A is the current 清朗服務 production design; B is the 成品先行 proposal. This page and both previews are noindex. The production homepage remains unchanged until the user selects a version.
+URL: /compare/index.html. A is the current 清朗服務 production design; B is the 成品先行 proposal. This page and both previews are noindex. The user selected A 清朗原版 for the production homepage on 2026-10-28. The homepage already matches the A snapshot; its content, pricing, LINE flow and approved animations are preserved. The comparison now defaults to A; B remains an alternative reference.
 
 A freezes the current homepage body exactly and references original.css, a copy of the production stylesheet at comparison creation. Both previews omit the optional design editor to prevent browser-local settings affecting the comparison. Both use the same pricing and SRT interaction modules, examples and actual LINE destination.
 
@@ -12,4 +12,4 @@ The comparison supports keyboard tabs, full-page links, 390px phone view, dual c
 
 Sources: original.html/original.css are frozen snapshots; work.html/work.css contain the new proposal; compare.mjs and compare.css own the comparison controls. The build copies this directory but excludes dot directories and Markdown. Reviews are in .review and do not deploy.
 
-Design direction: adapted The printed annual, seed 1510505126, with the approved palette/type retained. Its column discipline is carried by the SRT document; photographic scene suggestions were omitted because they do not prove this audio transcription service and no authorized audio/photos were supplied. Existing brand/design records remain authoritative until selection.
+Design direction: adapted The printed annual, seed 1510505126, with the approved palette/type retained. Its column discipline is carried by the SRT document; photographic scene suggestions were omitted because they do not prove this audio transcription service and no authorized audio/photos were supplied. Existing brand/design records remain authoritative for the selected A production design.

@@ -1,7 +1,7 @@
-const versions={original:{name:'A 清朗原版',description:'保留目前正式版：置中開場、打字動畫、立體 LINE 按鈕與原有段落配置。'},work:{name:'B 成品先行',description:'把 SRT 成品放進第一屏，文字靠左、資訊直接，讓訪客先看到交付內容。'}};
+const versions={original:{name:'A 清朗原版',description:'已選定的正式版本：置中開場、打字動畫、立體 LINE 按鈕與原有段落配置。'},work:{name:'B 成品先行',description:'把 SRT 成品放進第一屏，文字靠左、資訊直接，讓訪客先看到交付內容。'}};
 const $=s=>document.querySelector(s),tabs=[...document.querySelectorAll('[data-version]')];
 const params=new URLSearchParams(location.hash.slice(1));
-let active=Object.hasOwn(versions,params.get('version'))?params.get('version'):'work';
+let active=Object.hasOwn(versions,params.get('version'))?params.get('version'):'original';
 let view=params.get('view')==='phone'?'phone':'desktop',both=params.get('layout')==='split',section=['hero','sample','pricing','process','faq','contact'].includes(params.get('section'))?params.get('section'):'hero',timer;
 function jump(id){$(`#frame-${id}`).contentWindow?.postMessage({type:'yinlu-jump',section},location.origin);}
 function render(){
