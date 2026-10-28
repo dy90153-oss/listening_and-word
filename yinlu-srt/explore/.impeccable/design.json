@@ -3,7 +3,7 @@
   "generatedAt": "2026-10-28T03:07:32.042117+00:00",
   "title": "Yinlu five independent proposals",
   "extensions": {
-    "scope": "explore/ only; no production brand selected",
+    "scope": "explore/ comparison reference; production brand 清朗服務 recorded in root DESIGN.md",
     "primitives": "explore/DESIGN.md frontmatter",
     "catalog": "explore/catalog.mjs",
     "hub": {
@@ -15,31 +15,31 @@
     "proposalNamespaces": {
       "editorial": {
         "mode": "Persuade",
-        "status": "awaiting user selection",
+        "status": "comparison reference; 清朗服務 selected for production",
         "namespace": "editorial-*",
         "source": "explore/themes/editorial.css"
       },
       "studio": {
         "mode": "Persuade",
-        "status": "awaiting user selection",
+        "status": "comparison reference; 清朗服務 selected for production",
         "namespace": "studio-*",
         "source": "explore/themes/studio.css"
       },
       "poster": {
         "mode": "Persuade",
-        "status": "awaiting user selection",
+        "status": "comparison reference; 清朗服務 selected for production",
         "namespace": "poster-*",
         "source": "explore/themes/poster.css"
       },
       "clear": {
         "mode": "Persuade",
-        "status": "awaiting user selection",
+        "status": "comparison reference; 清朗服務 selected for production",
         "namespace": "clear-*",
         "source": "explore/themes/clear.css"
       },
       "archive": {
         "mode": "Persuade",
-        "status": "awaiting user selection",
+        "status": "comparison reference; 清朗服務 selected for production",
         "namespace": "archive-*",
         "source": "explore/themes/archive.css"
       }

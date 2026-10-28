@@ -2,6 +2,8 @@
 
 公開接案網站：**https://yinlu-srt.vercel.app/**。
 
+正式視覺方向已選定「清朗服務」：晴藍／白色、可變黑體、置中開場、柔和圓角與清楚的詢價引導。服務文案與計價規則沿用已確認版本。正式樣式為 `assets/style.css`，字型位於 `assets/fonts/`，首頁不依賴比較頁的樣式檔。
+
 獨立目錄 `yinlu-srt/`，沿用既有 GitHub 儲存庫 `dy90153-oss/listening_and-word`，由獨立 Vercel 專案 `yinlu-srt` 部署；原網站程式不改動。
 
 ## 本機操作
@@ -64,7 +66,7 @@ Google 官方說明：https://developers.google.com/search/docs/fundamentals/seo
 
 五版與正式首頁共用相同的已確認核心文案及 `assets/app.mjs`、`assets/quote.mjs`；每版的 HTML 與樣式在獨立 iframe 裡呈現。`scripts/generate-variants.mjs` 從正式首頁擷取六個內容段落，建置時同步產生五版，確保服務定位、報價與 LINE 轉換目標一致。調整主站業務文案後請重新執行此產生器或建置。
 
-方向專屬的排版與色彩在 `explore/themes/`；`explore/DESIGN.md` 記錄比較範圍，正式首頁的 DESIGN.md 保持既有方向。比較頁及所有版本均設 `noindex,nofollow`，供挑選設計使用；選定後再延伸主站。比較預覽使用自託管 Noto Sans TC 400–800 可變字型，授權附在 `explore/fonts/OFL.txt`。建置只複製可執行的比較頁，不發布 `.review/` 截圖或 Markdown 工作文件。
+方向專屬的排版與色彩在 `explore/themes/`；`explore/DESIGN.md` 記錄比較範圍。使用者已選定「清朗服務」並套用正式首頁，正式品牌以根目錄 DESIGN.md 為準。比較頁及所有版本均設 `noindex,nofollow`，保留作為設計參考。比較預覽使用自託管 Noto Sans TC 400–800 可變字型，授權附在 `explore/fonts/OFL.txt`。建置只複製可執行的比較頁，不發布 `.review/` 截圖或 Markdown 工作文件。
 
 ## 驗證
 

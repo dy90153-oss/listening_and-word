@@ -1,36 +1,38 @@
 ---
 name: 音律工作室
-description: 安靜、清楚的繁體中文 SRT 工作室視覺系統
+description: 清朗服務 — 晴藍、清楚、親切的繁體中文 SRT 服務視覺系統
 colors:
-  forest-ink: "#173f35"
-  paper: "#f6f7f2"
-  muted-ink: "#496258"
-  celadon: "#e5eddf"
-  selected-celadon: "#ccdfbd"
-  error-red: "#952c2c"
-  forest-hover: "#285a46"
-  studio-green: "#234b40"
-  inverse-muted: "#c7e0cc"
-  field-border: "#809884"
-  cue-hover: "#d6e2cf"
-  timeline-muted: "#6b8a79"
-  timeline-active: "#d0e7bb"
+  blue-ink: "#124d76"
+  blue-muted: "#45667d"
+  near-white: "#fbfdff"
+  pale-blue: "#edf5fc"
+  white: "#ffffff"
+  selected-blue: "#d1e8f8"
+  cue-selected: "#c6e2f6"
+  field-border: "#7c9bb0"
+  contact-blue: "#d5eafa"
+  contact-hover: "#1e618f"
+  header-action: "#e4f0fa"
+  specimen-blue: "#e5f1fa"
+  alternate-row: "#e0effa"
+  inverse-muted: "#d4e9f8"
+  error-red: "#a62d3f"
 typography:
   display:
-    fontFamily: '"Noto Serif TC", "Songti TC", serif'
-    fontSize: "clamp(62px, 10.8vw, 154px)"
-    fontWeight: 500
-    lineHeight: 1.13
+    fontFamily: '"Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif'
+    fontSize: "clamp(56px, 6.5vw, 92px)"
+    fontWeight: 600
+    lineHeight: 1.25
     letterSpacing: "-0.035em"
   headline:
-    fontFamily: '"Noto Serif TC", "Songti TC", serif'
-    fontSize: "clamp(34px, 4.2vw, 58px)"
+    fontFamily: '"Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif'
+    fontSize: "46px"
     fontWeight: 500
-    lineHeight: 1.32
-    letterSpacing: "-0.025em"
+    lineHeight: 1.3
+    letterSpacing: "-0.03em"
   title:
     fontFamily: '"Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif'
-    fontSize: "clamp(19px, 1.65vw, 23px)"
+    fontSize: "25px"
     fontWeight: 500
     lineHeight: 1.5
   body:
@@ -38,189 +40,129 @@ typography:
     fontSize: "16px"
     fontWeight: 400
     lineHeight: 1.8
-  lead:
-    fontFamily: '"Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif'
-    fontSize: "clamp(19px, 1.65vw, 23px)"
-    fontWeight: 400
-    lineHeight: 1.65
   label:
     fontFamily: '"Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif'
     fontSize: "14px"
     fontWeight: 400
     lineHeight: 1.8
-  button:
-    fontFamily: '"Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif'
-    fontSize: "16px"
-    fontWeight: 500
-    lineHeight: 1.6
 rounded:
-  square: "0px"
+  field: "16px"
+  button: "12px"
+  result: "14px"
+  panel: "24px"
+  mobile-panel: "20px"
 spacing:
-  gutter: "clamp(22px, 5vw, 80px)"
+  gutter: "clamp(24px, 6vw, 96px)"
+  mobile-gutter: "24px"
 components:
   button-primary:
-    backgroundColor: "{colors.forest-ink}"
-    textColor: "{colors.paper}"
-    typography: "{typography.button}"
-    rounded: "{rounded.square}"
-    padding: "14px 28px"
-    height: "58px"
-  button-primary-hover:
-    backgroundColor: "{colors.forest-hover}"
+    backgroundColor: "{colors.blue-ink}"
+    textColor: "{colors.white}"
+    rounded: "{rounded.button}"
+    padding: "14px 26px"
+    height: "56px"
   duration-input:
-    backgroundColor: "{colors.paper}"
-    textColor: "{colors.forest-ink}"
-    rounded: "{rounded.square}"
-    padding: "12px 42px 12px 16px"
-    height: "60px"
+    backgroundColor: "{colors.white}"
+    textColor: "{colors.blue-ink}"
+    rounded: "{rounded.field}"
+    padding: "12px 40px 12px 14px"
+    height: "58px"
   cue-selected:
-    backgroundColor: "{colors.selected-celadon}"
-    textColor: "{colors.forest-ink}"
-    rounded: "{rounded.square}"
-    padding: "15px 12px"
-  cue-hover:
-    backgroundColor: "{colors.cue-hover}"
+    backgroundColor: "{colors.cue-selected}"
+    textColor: "{colors.blue-ink}"
+    rounded: "{rounded.button}"
+    padding: "17px 14px"
+  quote-panel:
+    backgroundColor: "{colors.pale-blue}"
+    textColor: "{colors.blue-ink}"
+    rounded: "{rounded.panel}"
+    padding: "34px"
   quote-summary:
-    backgroundColor: "{colors.paper}"
-    textColor: "{colors.forest-ink}"
-    rounded: "{rounded.square}"
-    padding: "22px 24px"
+    backgroundColor: "{colors.white}"
+    textColor: "{colors.blue-ink}"
+    rounded: "{rounded.result}"
+    padding: "22px"
 ---
 
 # Design System: 音律工作室
 
 ## Overview
 
-**Creative North Star: "有時間座標的紙頁"**
+**Creative North Star: "清朗服務"**
 
-以「有時間座標的紙頁」作為視覺隱喻：繁體中文是主要材料，紙白留白容納閱讀，深綠建立穩定的工作室語氣，淺綠承接資料與互動。整體安靜、清楚、專業；以完整句子和可讀的時間碼建立性格。
-
-字體、實色面與規整數字負責層次，沒有陰影或漸層。宋體標題帶出文字工作的溫度，黑體正文、標籤與控制項保持清楚。畫面密度寬鬆，資料區則以對齊與色階讓使用者逐步理解。
+使用者已選定的晴藍視覺方向，以清楚的繁體中文黑體、開闊留白與柔和圓角建立親切的專業感。深藍承擔閱讀、操作與品牌辨識，淺藍與白色負責區分資訊層次。
 
 **Key Characteristics:**
-
-- 繁體中文優先的宋體／黑體配對。
-- 紙白、深綠、淺綠構成平面色層。
-- 方角控制項、明確焦點與可讀時間碼。
-- 寬鬆段距與緊密資料對齊並存。
+- 晴藍底色與清楚的深藍文字。
+- 單一黑體家族，以真實字重形成層次。
+- 扁平色面、功能性圓角與可見焦點。
 
 ## Colors
 
-色彩以帶灰的綠與紙白為主；所有規範色值以前置 token 為準。以下名稱對應同名 token，而非額外色票。
-
 ### Primary
-
-- **錄音室深綠**（`forest-ink`）：正文墨色、主要按鈕與深色段落共用，讓品牌與資訊保持一致。
-- **深綠回應色**（`forest-hover`）：主要按鈕 hover，提供清楚但克制的回應。
+- **晴藍墨色**：品牌、正文、主要操作與字幕預覽的深色區域。
+- **柔藍文字**：次要說明，維持清楚可讀的對比。
 
 ### Neutral
+- **近白與純白**：頁面底色、欄位與報價摘要。
+- **淡晴藍與聯絡藍**：大面積區域與聯絡收尾。
+- **選取藍**：字幕選取狀態；錯誤紅僅用於驗證回饋。
 
-- **紙白**（`paper`）：主要頁面與試算結果的閱讀底色，也是深綠上的主要文字色。
-- **灰綠墨色**（`muted-ink`）：紙白與淺綠上的次要說明。
-- **淡青瓷綠**（`celadon`）：表單容器、流程色面、SRT 原稿底色與表格交錯列。
-- **選取嫩綠**（`selected-celadon`）：SRT 選取段落與聯絡連結 hover。
-- **字幕室綠**（`studio-green`）：深色大區塊內的字幕預覽面。
-- **反白灰綠**（`inverse-muted`）：深色區的中繼資訊、備註與次要說明。
-- **欄位灰綠**（`field-border`）：欄位描邊與捲軸。
-- **段落停留綠**（`cue-hover`）：尚未選取的字幕段落 hover。
-- **時間軌灰綠／亮綠**（`timeline-muted`、`timeline-active`）：時間段的未選取與選取狀態。
-
-### Semantic
-
-- **錯誤暗紅**（`error-red`）：欄位驗證訊息。錯誤同時有明確文字，不只改變顏色。
-
-**The Tonal Surface Rule.** 使用實色面區分主要背景、閱讀區與互動區；選取狀態以較明確的淺綠標記，並保留文字或狀態語意。
+**The Single Blue World Rule.** 延伸頁面沿用此藍色系，不引入其他候選方向的綠色、海報紅或深色螢光美學。
 
 ## Typography
 
-**Display Font:** 自託管 Noto Serif TC，退回 Songti TC、serif。
-
-**Body Font:** 自託管 Noto Sans TC，退回 PingFang TC、Microsoft JhengHei、sans-serif。
-
-**Character:** 宋體承接完整中文語句的呼吸，黑體負責資訊與操作。字型以 `font-display: swap` 載入；黑體檔涵蓋字重 400–700，宋體涵蓋 500–600。
+**Display Font:** Noto Sans TC，備援 PingFang TC、Microsoft JhengHei、sans-serif。
+**Body Font:** 同一字型家族。自託管可變字型支援 400–800；目前主要使用 400、500 與 600。
 
 ### Hierarchy
+- **Display**：主標以 600 字重；手機使用 clamp(47px, 11.8vw, 72px)。
+- **Headline**：區段標題主要 44–48px；中間寬度主要 40px，手機 32px。
+- **Title**：小標題主要 24–26px，手機 22–24px。
+- **Body**：16px、1.8 行高；表格、註記與輔助資訊縮至 13–15px。
+- **Label**：14px；數字、時間碼與金額使用等寬數字特性。
 
-- **Display**（`display`）：首頁主張；手機改為 `clamp(53px, 12vw, 88px)`，行高 1.25。
-- **Headline**（`headline`）：主要段落標題；手機一般為 36px、行高 1.4，FAQ 標題為 34px。
-- **Title**（`title`）：表單標題與一般三級標題；階梯流程另以宋體 `clamp(25px, 3vw, 40px)` 呈現。
-- **Lead**（`lead`）：服務摘要，以較鬆行高支持連續閱讀。
-- **Body**（`body`）：段落與控制項基底。介紹文字常限制在 520px，流程說明限制在 490px。
-- **Label**（`label`）：時間碼、次要資料、費率表頭與提示，不使用全大寫裝飾。
-- **Button**（`button`）：主要操作；單行中文與箭頭按內容對齊。
-
-金額、費率、時間碼與輸入數字使用 `font-variant-numeric: tabular-nums`。巨型聯絡字使用黑體與較緊字距，其桌面尺寸為 `clamp(64px, 11.5vw, 170px)`。
-
-**The Chinese Reading Rule.** 中文正文與數字控制項保持黑體；宋體用於標題與字幕語句，時間碼及金額使用等寬數字。
+**The Real Weight Rule.** 使用自託管可變字型提供的真實字重，不以假粗體或第二套展示字型製造層次。
 
 ## Layout
 
-容器最大寬度為 1600px，左右以 `gutter` token 自適應。區塊採全寬實色面配內層容器，閱讀與資料區的視線保持同一條左邊界。桌面介紹、SRT 示例與費率內容以雙欄組合；費率兩欄間距為 8vw。主要段距約 94–128px，依內容角色調整。
+主要內容容器最大寬度 1440px，左右留白使用 gutter。桌面以雙欄呈現字幕、報價與 FAQ；流程使用較窄的水平對照列。區段上下留白主要 72–95px。
 
-流程使用 12 欄網格，四步逐次向右推移；FAQ 使用標題／內容的 4:8 配置，回答直接展開為兩欄閱讀。這些是目前一頁式網站的表現模式，擴充內容時可依資訊量調整，而不是把所有內容套進相同卡片。
-
-- **1100px 以下：** 調整導覽與欄距，首頁價格和操作改成縱向排列；FAQ 標題先獨立成列。
-- **760px 以下：** 導覽另起一整列，SRT 與試算改為單欄，FAQ 改為單欄；主要段距收至約 56–66px。流程以 4%、8%、12% 的左縮排保留階梯節奏。
-- **360px 以下：** 大型 LINE 文字收至 44px，箭頭 38px；聯絡文字保持單行，圖示不壓縮。320px 寬度也需完整容納操作。
-- **1601px 以上：** 內層容器維持最大寬度，首頁上緣略加留白。
+1000px 以下縮小欄距與部分字級；700px 以下改為單欄，左右留白 24px，區段間距主要 56–64px。導覽在手機換到第二行，保留可直接使用的 LINE 按鈕。長文字自然換行。
 
 ## Elevation & Depth
 
-全站不使用陰影。紙白、淺綠與深綠色面提供平面層次；試算結果以紙白嵌入淺綠容器，字幕預覽則以稍亮的深綠嵌入深色段落。必要描邊只用在輸入控制項，不把每個資訊段落圍成框。
-
-**The Flat Surface Rule.** 元件以色面、間距與必要描邊分層，不加入陰影、漸層或裝飾性浮起效果。
+沒有陰影。以深藍、淺藍及白色的實色色面形成資訊層次；不增加漂浮光暈或仿材質。狀態動畫使用短暫顏色變化及微幅位移；尊重 prefers-reduced-motion。
 
 ## Shapes
 
-按鈕、輸入欄位與資料容器均為方角。欄位採 1px 實線描邊，其餘區分主要依賴色面與間距。圖示使用簡潔線條箭頭與品牌標誌，線條採當前文字色。時間軌由細長矩形段落構成，沒有圓膠囊或進度播放器造型。
+按鈕與字幕列使用 button 圓角；表單欄位使用 field 圓角；報價摘要使用 result 圓角。主要操作面板與字幕組合桌面使用 panel 圓角、手機使用 mobile-panel 圓角。波形品牌標誌為簡潔線條。
 
 ## Components
 
 ### Buttons
-
-明確、穩定的文字操作。主要按鈕使用 `button-primary`，hover 使用其同名變體。桌面 padding 與最小高度記錄於前置 token；手機 padding 改為 13px 22px、最小高度 56px。箭頭與文字以 flex 對齊，按下向下位移 2px；disabled 使用 0.5 透明度與不可操作游標。
-
-所有可互動元素以 `:focus-visible` 提供 3px currentColor 外框與 5px offset。連結、按鈕的狀態轉換約 0.25 秒；文字下載連結 hover 向右 4px。
+主要按鈕為深藍底、白字，至少 56px 高；首頁 LINE 操作桌面 60px。一般 hover 使用 brightness(.9)，聯絡操作使用 contact-hover。全站 focus-visible 為 3px 深藍外框，外移 5px；白字聯絡按鈕也使用深藍外框，以在淺藍底上清楚辨識。Disabled 降低透明度並保留原生語義。
 
 ### Cards / Containers
-
-資訊容器以色面承載，保持方角且不加陰影。試算表單桌面 padding 36px，在中型螢幕縮至 26px、手機為 25px 22px。結果區使用 `quote-summary`。FAQ 為直接閱讀段落，不設收合手風琴。
+淡藍試算面板包覆白色摘要，內距桌面 34px、中間寬度 26px、手機 26px 22px。字幕以深藍預覽及較淺藍的時間碼清單組合，手機上下排列。
 
 ### Inputs / Fields
-
-分鐘／秒鐘為兩個等寬數字欄位，單位固定在右側；欄位使用 `duration-input` 與灰綠描邊。select 延續同樣的紙白、方角與描邊，最小高度 54px。checkbox 保留原生行為並以深綠作 accent。提示與錯誤靠近相關欄位；結果及複製狀態使用適當 live region，失敗時提供可手動複製的 textarea。
+白底、1px 藍灰邊框，長度欄位 58px 高、23px 數字。單位在右側固定位置。保留原生 select、checkbox 與鍵盤行為；錯誤以文字說明並停用無效的複製操作。
 
 ### Navigation
+深藍品牌與文字導覽，hover 底線；LINE 入口有淡藍色底及圓角。手機導覽換行，所有項目仍可見。
 
-桌面品牌在左，文字導覽與 LINE 入口在右。導覽使用 label 字級，hover 加底線；手機品牌與聯絡入口保留第一列，服務導覽另起第二列。頁面提供鍵盤跳至主要內容的連結，取得焦點後顯示。
-
-### SRT Cue & Preview
-
-以兩個實色面並列呈現預覽與原稿。每段 cue 保留序號、起訖時間與句子，按鈕為整段可點區；hover 使用 `cue-hover`，選取使用 `cue-selected` 並同步 `aria-pressed`。選取更新上方字幕與對應時間軌，手機提示文字直接說明「點選時間段」。不顯示虛構播放控制項。
-
-### Reading FAQ & Stepping Process
-
-FAQ 問題用較粗黑體，回答沿用灰綠正文，保持直接可讀。流程標題用宋體，四步沿閱讀方向逐漸推移；手機保留輕微縮排，避免過度擠壓說明文字。
-
-### Contact Link
-
-大型 LINE 文字與斜向箭頭共用一個完整連結；手機保留單行文字。hover 使用選取嫩綠，箭頭向右上各移 5px。文字本身有完整可理解的操作名稱。
-
-段落進場使用 0.8 秒曲線與 20px 的垂直位移，初始透明度為 0.45。`prefers-reduced-motion: reduce` 停用動畫、轉換及平滑捲動；內容在沒有動畫時仍完整可讀。
+### SRT specimen
+時間碼與段落可點選，選取列使用 cue-selected，深藍預覽同步顯示對應內容。保留示意標示與下載入口。
 
 ## Do's and Don'ts
 
 ### Do:
-
-- **Do** 沿用前置 token 的色彩與字體配對，以閱讀層級選字級。
-- **Do** 讓時間碼與金額使用等寬數字，並保持資料欄位對齊。
-- **Do** 保留鍵盤可見焦點、原生表單語意與 reduced-motion 支援。
-- **Do** 讓手機的主要 LINE 文字與箭頭完整可見，聯絡文字保持單行。
-- **Do** 用段落與留白組織說明，讓 FAQ 保持直接可讀。
+- **Do** 延續晴藍、近白與深藍的單一視覺世界。
+- **Do** 保留清楚的數字、時間碼、表單狀態及鍵盤焦點。
+- **Do** 在手機使用單欄與自然換行。
 
 ### Don't:
-
-- **Don't** 為既有元件加入圓角、投影或漸層。
-- **Don't** 將資訊段落普遍改成同尺寸卡片格。
-- **Don't** 以只有顏色的提示取代選取語意、錯誤文字或表單標籤。
-- **Don't** 把格式示意包裝為正在播放的錄音，或補上沒有來源的信任數字。
+- **Don't** 混用其他四個候選版本的美學。
+- **Don't** 加入陰影、裝飾紋理或與服務無關的視覺素材。
+- **Don't** 將商業承諾或頁面排序當作全站視覺 token。

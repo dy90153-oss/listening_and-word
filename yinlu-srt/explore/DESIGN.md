@@ -1,6 +1,6 @@
 ---
 name: "Yinlu five independent proposals"
-description: "Implemented comparison tokens; pending user selection."
+description: "Implemented comparison tokens; 清朗服務 selected and applied to the production homepage."
 colors:
   hub-bg: "#f7f8f5"
   hub-ink: "#252b26"

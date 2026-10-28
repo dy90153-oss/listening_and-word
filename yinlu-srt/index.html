@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#173f35">
+  <meta name="theme-color" content="#124d76">
   <meta name="description" content="音律工作室提供單人國語／華語音檔轉繁體中文 SRT 時間軸逐字稿。每分鐘 NT$15、最低 NT$150，線上費用試算，透過 LINE 試聽報價，確認檔期與付款後製作。">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <link rel="canonical" href="https://yinlu-srt.vercel.app/">
@@ -19,13 +19,14 @@
   <meta name="twitter:card" content="summary_large_image">
   <title>音律工作室｜單人華語音檔轉繁體中文 SRT 逐字稿</title>
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="preload" href="/assets/fonts/noto-sans-tc-variable.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/style.css">
   <script type="module" src="/assets/app.mjs"></script>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://yinlu-srt.vercel.app/#studio","name":"音律工作室","url":"https://yinlu-srt.vercel.app/","sameAs":["https://lin.ee/9kHonjI"],"contactPoint":{"@type":"ContactPoint","contactType":"詢價與委託","url":"https://lin.ee/9kHonjI","availableLanguage":"zh-TW"}},{"@type":"Service","name":"單人華語音檔轉繁體中文 SRT 逐字稿","provider":{"@id":"https://yinlu-srt.vercel.app/#studio"},"serviceType":"華語音檔轉文字、SRT 時間軸逐字稿","description":"只承接單人國語／華語音檔，交付繁體中文 SRT 時間軸逐字稿。每分鐘 NT$15，最低消費 NT$150；正式費用與交期於試聽後確認。","offers":{"@type":"Offer","priceCurrency":"TWD","priceSpecification":{"@type":"UnitPriceSpecification","price":"15","priceCurrency":"TWD","unitText":"每音檔分鐘","description":"最低消費 NT$150，總長度向上進位整分鐘，專業與時效加成另計。"},"url":"https://yinlu-srt.vercel.app/#pricing"}},{"@type":"WebSite","url":"https://yinlu-srt.vercel.app/","name":"音律工作室","inLanguage":"zh-Hant-TW"}]}
   </script>
 </head>
-<body>
+<body data-direction="clear">
   <a class="skip" href="#main">跳至主要內容</a>
   <header class="header wrap">
     <a class="brand" href="#" aria-label="音律工作室首頁">
@@ -81,6 +82,16 @@
       </div>
     </section>
 
+    <section id="process" class="process field" aria-labelledby="process-title"><div class="wrap">
+      <h2 id="process-title">從一段錄音，<br>到一份逐字稿。</h2>
+      <ol class="process-list">
+        <li><h3>先把音檔傳給我們。</h3><p>加入 LINE，傳送可開啟的 Google Drive、Dropbox 或其他音檔連結，附上長度、用途與希望交期。</p></li>
+        <li><h3>一起確認報價與檔期。</h3><p>試聽後確認是否適合承接，再提供正式報價、預估交期與銀行轉帳資訊。</p></li>
+        <li><h3>完成付款，開始製作。</h3><p>全額轉帳並確認排單後起算交期，依原話轉寫繁體中文、斷句並加入時間碼。</p></li>
+        <li><h3>收到 SRT，回看每一句。</h3><p>交付 SRT 時間軸逐字稿。交件後 7 天內，可提出一次漏字、錯字或誤聽的免費修正。</p></li>
+      </ol>
+    </div></section>
+
     <section id="pricing" class="pricing wrap" aria-labelledby="pricing-title">
       <div class="section-intro"><h2 id="pricing-title">先算費用，<br>再安心委託。</h2><p>以音檔總長度計費，零頭秒數向上進位。<br>法律／醫療與時效加成相加計算，<br>正式費用與交期於試聽後確認。</p></div>
       <div class="pricing-layout">
@@ -107,16 +118,6 @@
         </form>
       </div>
     </section>
-
-    <section id="process" class="process field" aria-labelledby="process-title"><div class="wrap">
-      <h2 id="process-title">從一段錄音，<br>到一份逐字稿。</h2>
-      <ol class="process-list">
-        <li><h3>先把音檔傳給我們。</h3><p>加入 LINE，傳送可開啟的 Google Drive、Dropbox 或其他音檔連結，附上長度、用途與希望交期。</p></li>
-        <li><h3>一起確認報價與檔期。</h3><p>試聽後確認是否適合承接，再提供正式報價、預估交期與銀行轉帳資訊。</p></li>
-        <li><h3>完成付款，開始製作。</h3><p>全額轉帳並確認排單後起算交期，依原話轉寫繁體中文、斷句並加入時間碼。</p></li>
-        <li><h3>收到 SRT，回看每一句。</h3><p>交付 SRT 時間軸逐字稿。交件後 7 天內，可提出一次漏字、錯字或誤聽的免費修正。</p></li>
-      </ol>
-    </div></section>
 
     <section id="faq" class="faq wrap" aria-labelledby="faq-title"><h2 id="faq-title">委託之前，<br>你可能想知道。</h2><div class="faq-grid">
       <article><h3>什麼音檔可以委託？</h3><p>目前承接單一說話者的國語／華語音檔，例如個人講述、單人課程錄音與旁白。兩人以上對談、訪談或多人會議暫不承接；英文翻譯也尚未開放。</p></article>

@@ -7,7 +7,10 @@ const main = source.slice(source.indexOf('<main id="main">'), source.indexOf('</
 const sectionStarts = [...main.matchAll(/<section\b/g)].map(m => m.index);
 const sections = sectionStarts.map((start, i) => main.slice(start, sectionStarts[i + 1] ?? main.length).trim());
 if (sections.length !== 6) throw new Error('Expected six source sections');
-const [hero, sample, pricing, process, faq, contact] = sections;
+const hero = sections.find(section => section.includes('class="hero wrap"'));
+const byId = Object.fromEntries(sections.filter(section => section !== hero).map(section => [section.match(/id="([^"]+)"/)[1], section]));
+const { sample, pricing, process, faq, contact } = byId;
+if (![hero, sample, pricing, process, faq, contact].every(Boolean)) throw new Error('A source section is missing');
 const header = source.slice(source.indexOf('<header '), source.indexOf('</header>') + 9);
 const footer = source.slice(source.indexOf('<footer '), source.indexOf('</footer>') + 9);
 const pageOrder = {
