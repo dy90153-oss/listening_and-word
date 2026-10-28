@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-28T03:07:32.042117+00:00",
+  "title": "Yinlu five independent proposals",
+  "extensions": {
+    "scope": "explore/ only; no production brand selected",
+    "primitives": "explore/DESIGN.md frontmatter",
+    "catalog": "explore/catalog.mjs",
+    "hub": {
+      "mode": "Operate",
+      "namespace": "hub-*",
+      "source": "explore/hub.css"
+    },
+    "sharedSource": "explore/common.css",
+    "proposalNamespaces": {
+      "editorial": {
+        "mode": "Persuade",
+        "status": "awaiting user selection",
+        "namespace": "editorial-*",
+        "source": "explore/themes/editorial.css"
+      },
+      "studio": {
+        "mode": "Persuade",
+        "status": "awaiting user selection",
+        "namespace": "studio-*",
+        "source": "explore/themes/studio.css"
+      },
+      "poster": {
+        "mode": "Persuade",
+        "status": "awaiting user selection",
+        "namespace": "poster-*",
+        "source": "explore/themes/poster.css"
+      },
+      "clear": {
+        "mode": "Persuade",
+        "status": "awaiting user selection",
+        "namespace": "clear-*",
+        "source": "explore/themes/clear.css"
+      },
+      "archive": {
+        "mode": "Persuade",
+        "status": "awaiting user selection",
+        "namespace": "archive-*",
+        "source": "explore/themes/archive.css"
+      }
+    },
+    "motion": [
+      {
+        "name": "shared-ease",
+        "value": "cubic-bezier(.16,1,.3,1)"
+      },
+      {
+        "name": "shared-state",
+        "value": "background-color .2s, color .2s, transform .25s var(--ease)"
+      },
+      {
+        "name": "shared-entry",
+        "value": "rise .65s var(--ease)"
+      },
+      {
+        "name": "hub-state",
+        "value": "background-color .15s, color .15s"
+      }
+    ],
+    "elevation": "No box-shadow; flat surfaces and color reversal.",
+    "notes": [
+      "Both CSS bases respect reduced motion.",
+      "Theme component selectors override root roles; consult the source CSS.",
+      "Poster mobile pricing unit is nowrap and flex-shrink:0."
+    ]
+  }
+}

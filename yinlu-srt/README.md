@@ -58,6 +58,14 @@ GitHub 內容更新後由 Vercel Git 整合建置部署。不要把舊站的 Roo
 
 Google 官方說明：https://developers.google.com/search/docs/fundamentals/seo-starter-guide
 
+## 五個視覺方向比較
+
+比較頁：`/explore/index.html`。五個獨立方向為編輯書房、字幕工作台、字體海報、清朗服務、文字檔案室。可切換完整頁面、切換桌面／390px手機寬度、對齊同一段落，並複製想繼續延伸的版本名稱。自由瀏覽保留各版的捲動位置。
+
+五版與正式首頁共用相同的已確認核心文案及 `assets/app.mjs`、`assets/quote.mjs`；每版的 HTML 與樣式在獨立 iframe 裡呈現。`scripts/generate-variants.mjs` 從正式首頁擷取六個內容段落，建置時同步產生五版，確保服務定位、報價與 LINE 轉換目標一致。調整主站業務文案後請重新執行此產生器或建置。
+
+方向專屬的排版與色彩在 `explore/themes/`；`explore/DESIGN.md` 記錄比較範圍，正式首頁的 DESIGN.md 保持既有方向。比較頁及所有版本均設 `noindex,nofollow`，供挑選設計使用；選定後再延伸主站。比較預覽使用自託管 Noto Sans TC 400–800 可變字型，授權附在 `explore/fonts/OFL.txt`。建置只複製可執行的比較頁，不發布 `.review/` 截圖或 Markdown 工作文件。
+
 ## 驗證
 
 `npm test` 驗證最低消費、秒數進位、相加加成、總額取整、錯誤長度與詢價文字。Chrome 本機流程另驗證費用表單、空值/長度限制、剪貼簿成功與失敗替代流程、SRT 時間段點選/鍵盤操作、示例與 SEO 檔案回應、1440/768/390/320 寬度無橫向溢出及無 JavaScript 例外。測試不會實際傳送 LINE 訊息。
