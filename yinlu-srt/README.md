@@ -81,3 +81,7 @@ Google 官方說明：https://developers.google.com/search/docs/fundamentals/seo
 設定自動存在此瀏覽器的 localStorage，不會改寫所有訪客看到的正式版。可匯出／匯入版本 1 JSON，或複製帶有設定的正式站預覽連結。調整滿意後將設定交給維護者，再寫入網站原始碼並部署。分享連結只含視覺參數，不含客戶音檔或詢價資料。
 
 實作：`assets/design-panel.mjs`、`assets/design-panel.css`、`assets/design-settings.mjs`。面板使用 Shadow DOM 隔離自身樣式；網站預覽使用可移除的樣式層，視窗變更時重新讀取原版尺寸，避免字級倍率累乘。匯入值採型別、列舉、範圍與六位色碼驗證，設定檔上限 20 KB。
+
+## 原版與成品先行版比較
+
+`/compare/index.html` 提供兩個完整版本：A 清朗原版、B 成品先行。支援切換、同時比較、桌面／手機預覽、段落對照與複製選版文字。原版內容和樣式已在 `compare/` 獨立保存；這次未更換正式首頁。比較頁與預覽均為 noindex，不載入個人的設計面板設定。選定後再將該版套用正式首頁。
