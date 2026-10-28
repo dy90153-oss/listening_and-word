@@ -85,6 +85,16 @@
         "name": "ease",
         "value": "cubic-bezier(.16,1,.3,1)",
         "purpose": "State movement and optional entrance animation."
+      },
+      {
+        "name": "hero-typewriter",
+        "value": "0.25s delay + 0.12s per character, one-shot",
+        "purpose": "User-selected heading typing; finite cursor and reduced-motion static fallback."
+      },
+      {
+        "name": "description-typewriter",
+        "value": "0.2s delay + 0.24s per phrase, 0.32s stepped reveal",
+        "purpose": "User-selected phrase reveal, pace 1; reduced-motion static fallback."
       }
     ],
     "breakpoints": [
@@ -97,7 +107,13 @@
         "value": "700px"
       }
     ],
-    "shadows": []
+    "shadows": [
+      {
+        "name": "homepage-line-depth",
+        "value": "inset 0 6px 10px rgb(255 255 255 / .14), inset 0 -5px 9px rgb(18 77 118 / .5), 0 10px 20px -5px rgb(18 77 118 / .3)",
+        "purpose": "User-selected homepage LINE button only."
+      }
+    ]
   },
   "components": [
     {
@@ -146,6 +162,13 @@
       "description": "Navigation as implemented in the selected 清朗服務 system.",
       "html": "<nav class=\"ds-nav\" aria-label=\"主要導覽\"><a href=\"#sample\">SRT 成品</a><a href=\"#pricing\">費用試算</a><a href=\"https://lin.ee/9kHonjI\">LINE 詢價</a></nav>",
       "css": ".ds-nav{display:flex;flex-wrap:wrap;gap:28px;color:#124d76;font:400 14px/1.8 \"Noto Sans TC\",sans-serif}.ds-nav a{display:flex;align-items:center;min-height:44px;color:inherit;text-decoration:none;text-underline-offset:5px}.ds-nav a:hover{text-decoration:underline}.ds-nav a:focus-visible{outline:3px solid #124d76;outline-offset:5px}"
+    },
+    {
+      "name": "Homepage dimensional LINE action",
+      "kind": "button",
+      "description": "User-selected local exception to the flat primary action.",
+      "html": "<a class=\"ds-depth\" href=\"https://lin.ee/9kHonjI\">LINE</a>",
+      "css": ".ds-depth{display:inline-flex;align-items:center;justify-content:center;min-height:60px;padding:14px 26px;box-sizing:border-box;border-radius:20px;background:linear-gradient(180deg,#1e618f,#124d76);color:white;text-decoration:none;font:500 16px/1.5 \"Noto Sans TC\",sans-serif;box-shadow:inset 0 6px 10px rgb(255 255 255 / .14),inset 0 -5px 9px rgb(18 77 118 / .5),0 10px 20px -5px rgb(18 77 118 / .3);transition:transform .2s}.ds-depth:hover{transform:translateY(-2px)}.ds-depth:active{transform:translateY(2px)}.ds-depth:focus-visible{outline:3px solid #124d76;outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-depth{transition:none}.ds-depth:hover,.ds-depth:active{transform:none}}"
     }
   ],
   "narrative": {
@@ -175,7 +198,7 @@
     ],
     "donts": [
       "Don’t 混用其他四個候選版本的美學。",
-      "Don’t 加入陰影、裝飾紋理或與服務無關的視覺素材。",
+      "Don't spread the homepage LINE button's user-selected depth treatment to other surfaces or add unrelated texture.",
       "Don’t 將商業承諾或頁面排序當作全站視覺 token。"
     ]
   }

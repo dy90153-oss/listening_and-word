@@ -132,7 +132,9 @@ components:
 
 ## Elevation & Depth
 
-沒有陰影。以深藍、淺藍及白色的實色色面形成資訊層次；不增加漂浮光暈或仿材質。狀態動畫使用短暫顏色變化及微幅位移；尊重 prefers-reduced-motion。
+Default surfaces remain flat. The user selected a dimensional exception for the homepage LINE action: 20px corners, blue-on-blue shading, inset highlights and a soft downward shadow. Hover raises it slightly; pressing lowers it and reduces the shadow. Do not spread this treatment to other controls.
+
+The user also selected a one-shot typewriter headline and a phrase-by-phrase introduction reveal at pace 1. The heading finishes its text in about 1.34 seconds, then the cursor stops; the description finishes in about 1.96 seconds. The complete text keeps its layout space throughout. Reduced motion shows all text immediately, hides cursors and removes button movement. Existing service copy, pricing and LINE targets remain unchanged.
 
 ## Shapes
 
@@ -164,5 +166,5 @@ components:
 
 ### Don't:
 - **Don't** 混用其他四個候選版本的美學。
-- **Don't** 加入陰影、裝飾紋理或與服務無關的視覺素材。
+- **Don't** spread the homepage LINE button's user-selected depth treatment to other surfaces or add unrelated texture.
 - **Don't** 將商業承諾或頁面排序當作全站視覺 token。
