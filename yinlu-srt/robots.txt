@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yinlu-srt.vercel.app/sitemap.xml
