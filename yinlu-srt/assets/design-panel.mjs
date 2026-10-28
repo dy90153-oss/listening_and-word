@@ -7,7 +7,7 @@ function init(){
  let settings={...DEFAULTS},storageAvailable=true,startMessage='調整會即時預覽。';
  try{const saved=localStorage.getItem(key);if(saved)settings=parseSettings(saved);}catch{storageAvailable=false;}
  if(params.has('theme')){try{settings=parseSettings(params.get('theme'));startMessage='已載入分享的設定。';}catch{startMessage='分享設定無效，已使用此瀏覽器的設定。';}}
- let original=false,history=[JSON.stringify(settings)],cursor=0,saveTimer,resizeTimer;
+ let original=false,history=[JSON.stringify(settings)],cursor=0,resizeTimer;
  const host=document.createElement('yinlu-design-panel');
  host.setAttribute('data-design-panel','');document.body.append(host);
  const root=host.attachShadow({mode:'open'});
@@ -96,7 +96,7 @@ ${scope} .description-typewriter .desc-part{animation-duration:${.32*factor}s;an
   $('#contrast').innerHTML=`<p><strong>即時對比檢查</strong></p><p class="${bodyRatio<4.5?'warn':''}">主要文字／背景 ${bodyRatio.toFixed(1)}:1${bodyRatio<4.5?' · 建議調深文字或調淺背景':''}</p><p class="${mutedRatio<4.5?'warn':''}">次要文字／底色 ${mutedRatio.toFixed(1)}:1${mutedRatio<4.5?' · 對比偏低':''}</p><p>按鈕文字自動配色 ${buttonRatio.toFixed(1)}:1</p>`;
  }
  function say(message){$('#status').textContent=message;}
- function save(){clearTimeout(saveTimer);saveTimer=setTimeout(()=>{try{localStorage.setItem(key,serialize(settings));storageAvailable=true;say(original?'正在查看原版；你的設定仍已保留。':'已儲存在此瀏覽器。');}catch{storageAvailable=false;say('瀏覽器無法儲存，請匯出設定備份。');}},250);}
+ function save(){const current=new URL(location.href);if(current.searchParams.has('theme')){current.searchParams.delete('theme');window.history.replaceState(null,'',current.href);}try{localStorage.setItem(key,serialize(settings));storageAvailable=true;say(original?'正在查看原版；你的設定仍已保留。':'已儲存在此瀏覽器。');}catch{storageAvailable=false;say('瀏覽器無法儲存，請匯出設定備份。');}}
  function commit(){const snapshot=JSON.stringify(settings);if(snapshot!==history[cursor]){history=history.slice(0,cursor+1);history.push(snapshot);if(history.length>50)history.shift();cursor=history.length-1;}sync();save();}
  function replace(next,message){settings=normalize(next);original=false;apply();commit();if(message)say(message);}
  root.addEventListener('input',event=>{
