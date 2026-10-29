@@ -168,3 +168,7 @@ The user also selected a one-shot typewriter headline and a phrase-by-phrase int
 - **Don't** 混用其他四個候選版本的美學。
 - **Don't** spread the homepage LINE button's user-selected depth treatment to other surfaces or add unrelated texture.
 - **Don't** 將商業承諾或頁面排序當作全站視覺 token。
+
+### Workspace imagery
+
+The selected clear homepage adds a single photographic workspace illustration between the hero and the SRT example. Soft daylight, pale oak, ivory and navy headphones add warmth within the established blue-white palette. The image is AI-generated illustrative photography, not a photograph of the actual studio. No visible subtitles, client material or recording equipment. Desktop uses a wide inset crop; mobile uses a taller crop. Assets are locally hosted responsive WebP files.
