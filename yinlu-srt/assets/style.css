@@ -43,3 +43,7 @@
 /* A quiet photographic pause between the introduction and SRT example. */
 .studio-photo{max-width:1440px;margin:48px auto 0}.studio-photo picture{display:block}.studio-photo img{display:block;width:100%;height:auto;aspect-ratio:3.2 / 1;object-fit:cover;object-position:50% 56%;border-radius:24px}
 @media(max-width:700px){.studio-photo{margin-top:28px}.studio-photo img{aspect-ratio:1.5 / 1;border-radius:20px;object-position:50% 56%}}
+
+/* Paper and proofreading photograph replaces the redundant SRT interface. */
+.sample-editorial .sample-composition{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:64px}.paper-photo{margin:0;min-width:0}.paper-photo img{display:block;width:100%;height:auto;aspect-ratio:3 / 2;object-fit:contain;border-radius:20px}.sample-editorial h2{font-size:clamp(32px,3.3vw,46px);text-align:left;line-height:1.4}.sample-editorial h2 br{display:block}.sample-copy p{max-width:29em;color:var(--muted);margin-top:24px;line-height:1.9}.sample-copy .text-link{margin-top:24px;font-size:16px}
+@media(max-width:700px){.sample-editorial .sample-composition{grid-template-columns:minmax(0,1fr);gap:28px}.sample-copy{grid-row:1}.sample-copy p{margin-top:20px}.paper-photo{max-width:440px;width:100%;margin-inline:auto}}

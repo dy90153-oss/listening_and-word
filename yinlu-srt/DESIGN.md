@@ -172,3 +172,5 @@ The user also selected a one-shot typewriter headline and a phrase-by-phrase int
 ### Workspace imagery
 
 The selected clear homepage adds a single photographic workspace illustration between the hero and the SRT example. Soft daylight, pale oak, ivory and navy headphones add warmth within the established blue-white palette. The image is AI-generated illustrative photography, not a photograph of the actual studio. No visible subtitles, client material or recording equipment. Desktop uses a wide inset crop; mobile uses a taller crop. Assets are locally hosted responsive WebP files.
+
+The SRT section now uses a single realistic editorial photograph of paper, softly focused paragraph lines and a navy proofreading pencil, with the existing blue/ivory palette. It replaces the redundant subtitle preview and raw SRT interface; the downloadable SRT example remains. No headphones or screens repeat the workspace photograph. Desktop places the photograph beside concise copy; mobile places copy first.
