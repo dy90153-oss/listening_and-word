@@ -1,4 +1,5 @@
-import {cp,mkdir,readFile,writeFile} from 'node:fs/promises';
+import {cp,mkdir,readFile,writeFile,rm} from 'node:fs/promises';
+await rm('dist',{recursive:true,force:true});
 await mkdir('dist',{recursive:true});await cp('site','dist',{recursive:true});
 const production=process.env.VERCEL_ENV==='production';
 const host=process.env.VERCEL_PROJECT_PRODUCTION_URL||'yinlu-editorial.vercel.app';const origin='https://'+host;
